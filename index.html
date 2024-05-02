@@ -7,9 +7,41 @@
         <meta name="author" content="Brian Giannini">
         <meta name="theme-color" content="#8fffff">
         <meta name="color-scheme" content="light dark">
-        <link rel="icon" href="icon.png">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/switch.css">
+        <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/toggle-dark-mode.js"></script>
     </head>
     <body>
-        Bonjour monde
+        <div class="container">
+            <div class="sticky-header" id="part-pannel">
+
+                <label class="switch">
+                    <input type="checkbox" id="checkbox-change" aria-label="Toggle dark mode">
+                    <span class="slider round"></span>
+                </label>
+
+            </div>
+
+            <div id="part-content">
+                <h1>To be revealed...</h1>
+
+                <div class="section header-section center-section">
+
+                    <h1 class="inline">CRIAPHORE</h1>
+
+                    <p>Criaphore is developing AI applications designed to maximize the potential of your everyday life across various sectors such as healthcare, education, social interaction, and personal development. Stay tuned for the unveiling of our first application...</p>
+                    <p>contact: <a href="mailto: brian@giannini.contact">brian@giannini.contact</a> </p>
+                
+                </div>
+
+            </div>
+            <div>
+                <p>@ 2024 Criaphore trademark</p>
+            </div>
+        </div>
     </body>
 </html>
+

@@ -1,0 +1,201 @@
+html{scroll-behavior:smooth}
+
+/* Themes */
+.container {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+:root {
+    --shadow-first: rgba(0, 0, 0, 0.12);
+    --shadow-second: rgba(0, 0, 0, 0.24);
+}
+
+body {
+    margin: 0px;
+    background-color: var(--bkg-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bkg-top: rgb(255, 255, 255);
+        --bkg-mid: rgb(245, 245, 245);
+    }
+
+    body {
+        --text-color: #000000;
+        --bkg-color: rgb(233, 233, 233);
+    }
+    a {
+        color: rgb(0, 106, 117);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bkg-top: rgb(51, 51, 51);
+        --bkg-mid: rgb(24, 26, 27);
+    }
+
+    body {
+        --text-color: rgb(232, 230, 227);
+        --bkg-color: rgb(0, 0, 0);
+    }
+    a {
+        color: #7af3ff;
+    }
+}
+
+/* To toggle dark theme*/
+.root-dark-theme {
+    --bkg-top: rgb(51, 51, 51);
+    --bkg-mid: rgb(24, 26, 27);
+}
+.body-dark-theme {
+    --text-color: rgb(232, 230, 227);
+    --bkg-color: rgb(0, 0, 0);
+}
+.a-dark-theme {
+    color: #55aeb7;
+}
+
+/* To toggle light theme*/
+.root-light-theme {
+    --bkg-top: rgb(255, 255, 255);
+    --bkg-mid: rgb(245, 245, 245);
+}
+.body-light-theme {
+    --text-color: #000000;
+    --bkg-color: rgb(233, 233, 233);
+}
+.a-light-theme {
+    color: rgb(0, 106, 117);
+}
+
+/* Global */
+.portrait {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.center-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.center-vertical h1 {
+    margin-left: 30px;
+}
+
+#toggle-button {
+    float: right;
+    margin-right: 2%;
+}
+
+#part-pannel {
+    height: 3rem;
+    background-color: var(--bkg-top);
+    box-shadow: var(--shadow-first) 0px 1px 3px, var(--shadow-second) 0px 1px 2px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    top: 0;
+    text-transform: uppercase;
+}
+
+#part-content {
+    box-shadow: var(--shadow-first) 0px 1px 3px, var(--shadow-second) 0px 1px 2px;
+    background-color: var(--bkg-mid);
+    padding: 2%;
+    height: 500px;
+}
+
+.section {
+    background-color: var(--bkg-top);
+    padding: 2%;
+    box-shadow: var(--shadow-first) 0px 1px 3px, var(--shadow-second) 0px 1px 2px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+ .shelf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    flex: 0 0 300px;
+    min-height: 250px;
+    max-height: 250px;
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: justify;
+}
+
+.header-section {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box; /* so the padding don't overflow */
+}
+
+.sticky-header {
+    background-color: var(--bkg-top);
+    position: sticky;
+    z-index: 10;
+    padding: 3rem 20px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+ul.vertical-list li {
+    list-style:none;
+    padding-bottom: 8px;
+}
+
+ul.horizontal-list li {
+    padding-right: 8px;
+    display: inline;
+    list-style:none;
+}
+
+.center-image {
+    display: block; /* This can actually be omitted since it's redundant with flex items */
+    max-width: 100%; /* To ensure the image is responsive and doesn't overflow */
+    max-height: 100%; /* To ensure the image doesn't exceed the container's height */
+    margin: auto;
+    height: 100px;
+    width: auto;
+}
+
+.clickable-div {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from parent element */
+    transition: box-shadow 0.3s; /* Add transition for smooth animation */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3); /* Add elevation shadow */
+}
+
+.clickable-div.a-light-theme:hover {
+    background-color: #e8e8e8;
+}
+
+.clickable-div.a-dark-theme:hover {
+    background-color: #242424;
+}
