@@ -250,3 +250,25 @@ a {
     opacity: 0.8;
     margin-top: 1rem;
 }
+
+.contact-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    margin: 2rem 0;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contact-email {
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.contact-email:hover {
+    color: var(--primary-hover);
+}
