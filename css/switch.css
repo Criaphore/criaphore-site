@@ -1,7 +1,7 @@
 /* The switch - the box around the slider */
 .switch {
-  position: absolute;
-  right: 2%;
+  position: relative;
+  right: 0;
   width: 60px;
   height: 34px;
 }

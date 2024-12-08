@@ -13,33 +13,99 @@
         <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script type="text/javascript" src="scripts/toggle-dark-mode.js"></script>
+        <link rel="icon" type="image/png" href="imgs/criaphore.png">
+        <link rel="shortcut icon" type="image/png" href="imgs/criaphore.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="imgs/criaphore-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="imgs/criaphore-16x16.png">
     </head>
+
     <body>
         <div class="container">
             <div class="sticky-header" id="part-pannel">
-
-                <label class="switch">
-                    <input type="checkbox" id="checkbox-change" aria-label="Toggle dark mode">
-                    <span class="slider round"></span>
-                </label>
-
+                <div class="header-left">
+                    <img src="imgs/criaphore.png" alt="Criaphore logo" class="header-logo">
+                    <span class="brand">Criaphore</span>
+                </div>
+                <div class="header-center">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="#download">Download</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#aboutus">The Vision</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <label class="switch">
+                        <input type="checkbox" id="checkbox-change" aria-label="Toggle dark mode">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
             </div>
 
             <div id="part-content">
-                <h1>To be revealed...</h1>
-
                 <div class="section header-section center-section">
-
-                    <h1 class="inline">CRIAPHORE</h1>
-
-                    <p>Criaphore is developing AI applications designed to maximize the potential of your everyday life across various sectors such as healthcare, education, social interaction, and personal development. Stay tuned for the unveiling of our first application...</p>
-                    <p>contact: <a href="mailto: brian@criaphore.com">brian@criaphore.com</a> </p>
-                
+                    <h1 class="inline">Criaphore</h1>
+                    <img src="imgs/criaphore.png" alt="Criaphore logo" class="hero-logo">
+                    <p class="tagline">Your Personal AI Healthcare Partner</p>
                 </div>
 
+                <div id="download" class="section download-section">
+                    <h2>Get started soon...</h2>
+                    <p>Criaphore will be available on iOS and Android early 2025</p>
+                    <div class="app-buttons">
+                        <a href="#" class="app-button">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" 
+                                 alt="Download on App Store" 
+                                 class="store-badge">
+                        </a>
+                        <a href="#" class="app-button">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+                                 alt="Get it on Google Play" 
+                                 class="store-badge">
+                        </a>
+                    </div>
+                </div>
+
+                <div id="features" class="section features-section">
+                    <h2 class="section-title">Features</h2>
+                    <div class="shelf">
+                        <div class="box">
+                            <img src="imgs/doc.png" 
+                                 alt="24/7 Health Support illustration" 
+                                 loading="lazy">
+                            <h2>24/7 Health Support</h2>
+                            <p>Access medical information and preliminary assessments anytime, anywhere. Criaphore is always ready to help guide you through health concerns.</p>
+                        </div>
+                        <div class="box">
+                            <img src="imgs/criaphore.png" 
+                                 alt="Smart Monitoring illustration" 
+                                 loading="lazy">
+                            <h2>Smart Monitoring</h2>
+                            <p>Track your vital signs, medications, and symptoms with intelligent pattern recognition to provide personalized health insights.</p>
+                        </div>
+                        <div class="box">
+                            <img src="imgs/ai-privacy.png" 
+                                 alt="Privacy & Security illustration" 
+                                 loading="lazy">
+                            <h2>Privacy & Security</h2>
+                            <p>In device storage only, no data is shared with third parties. Your health data is yours.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="aboutus" class="section about-section">
+                    <h2 class="section-title">The vision</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>Criaphore is revolutionizing healthcare through artificial intelligence. The vision is to make quality healthcare accessible to everyone, everywhere, at any time.</p>
+                            <p>Your health and the health of your loved ones is the most important thing in your life, and Criaphore is here to help you take care of it.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>@ 2024 Criaphore trademark</p>
+            <div class="footer">
+            <p>@ 2024 Criaphore trademark</p>
             </div>
         </div>
     </body>
