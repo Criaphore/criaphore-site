@@ -229,6 +229,7 @@ a {
     font-size: 18px;
     font-weight: 500;
     color: var(--text-color);
+    margin-right: 8px;
 }
 
 .header-left {
