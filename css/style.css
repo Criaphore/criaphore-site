@@ -69,10 +69,20 @@ a {
 }
 
 .section {
+    position: relative;
     background-color: var(--bkg-top);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: var(--shadow-first) 0px 1px 3px, var(--shadow-second) 0px 1px 2px;
+}
+
+.bottom-right-text {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: var(--primary-color);
+
 }
 
 .header-section {
@@ -220,8 +230,6 @@ h2.section-title {
     }
 }
 
-/* Add styles for the header sections */
-
 .brand {
     font-size: 18px;
     font-weight: 500;
@@ -230,7 +238,7 @@ h2.section-title {
 }
 
 .hero-logo {
-    height: 200px;
+    height: 150px;
     width: auto;
     margin: 1.5rem auto;
     display: block;
@@ -271,4 +279,60 @@ h2.section-title {
 
 .footer-link:hover {
     color: var(--primary-hover);
+}
+
+.clickable-div {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.1s ease-in-out;
+}
+
+.clickable-div:hover {
+    transform: translateY(-5px); 
+  }
+
+  .title-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.title-logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.hero-logo-small {
+    height: 3rem;
+    width: auto;
+}
+
+.banner-image {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #000;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    max-width: 500px;
+}
+
+.download-section h2 {
+    text-align: center;
+}
+
+.download-section h1 {
+    text-align: center;
+}
+
+.bottom-right-text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    cursor: pointer;
 }

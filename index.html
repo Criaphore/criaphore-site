@@ -1,134 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Criaphore website</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Criaphore products presentation">
-        <meta name="author" content="Brian Giannini">
-        <meta name="theme-color" content="#8fffff">
-        <meta name="color-scheme" content="light dark">
-        
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/switch.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <script type="text/javascript" src="scripts/toggle-dark-mode.js"></script>
-        <script type="text/javascript" src="scripts/hamburger.js"></script>
-        <link rel="icon" type="image/png" href="imgs/criaphore.png">
-        <link rel="shortcut icon" type="image/png" href="imgs/criaphore.png">
-    </head>
+<head>
+    <title>Criaphore</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Criaphore apps presentation">
+    <meta name="author" content="Brian Giannini">
+    <meta name="theme-color" content="#8fffff">
+    <meta name="color-scheme" content="light dark">
+    
+    <link rel="icon" type="image/png" href="imgs/criaphore/fav/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="imgs/criaphore/fav/favicon.svg" />
+    <link rel="shortcut icon" href="imgs/criaphore/fav/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/criaphore/fav/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Criaphore" />
+    <link rel="manifest" href="imgs/criaphore/fav/site.webmanifest" />
 
-    <body>
-        <div class="container">
-            <div class="sticky-header" id="part-pannel">
-                <div class="header-left">
-                    <a href="#part-content">
-                        <img src="imgs/criaphore.png" alt="Criaphore logo" class="header-logo">
-                        <span class="brand">Criaphore</span>
-                    </a>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/switch.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Criaphore" />
+    <meta property="og:description" content="Criaphore company presentation" />
+    <meta property="og:image" content="https://criaphore.com/imgs/criaphore/criaphore.png" />
+    <meta property="og:url" content="https://criaphore.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Criaphore">
+    <meta name="twitter:description" content="Criaphore available apps">
+    <meta name="twitter:image" content="https://criaphore.com/imgs/criaphore/criaphore.png">
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/toggle-dark-mode.js"></script>
+<script type="text/javascript" src="scripts/hamburger.js"></script>
+
+<body>
+    <div class="container">
+        <div class="sticky-header" id="part-pannel">
+            <div class="header-left">
+                <a href="#part-content">
+                    <img src="imgs/criaphore/criaphore.png" alt="Criaphore logo" class="header-logo">
+                    <span class="brand"></span>
+                </a>
+            </div>
+            <div class="header-center">               
+            </div>
+            <div class="header-right">
+                <label class="switch">
+                    <input type="checkbox" id="checkbox-change" aria-label="Toggle dark mode">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div id="part-content">
+
+            <div class="section header-section center-section">
+                <div class="title-logo">
+                  <h1 class="inline">Criaphore</h1>
+                  <img src="imgs/criaphore/criaphore.png" alt="Criaphore logo" class="hero-logo-small">
                 </div>
-                <div class="header-center">
-                    <button class="hamburger" aria-label="Menu">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </button>
-                    <nav class="nav-menu">
-                        <ul class="nav-links">
-                            <li><a href="#download">Download</a></li>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#aboutus">The Vision</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header-right">
-                    <label class="switch">
-                        <input type="checkbox" id="checkbox-change" aria-label="Toggle dark mode">
-                        <span class="slider round"></span>
-                    </label>
+                <p class="tagline">Creating AI-powered apps that make life easier.</p>
+            </div>
+
+            <h1 class="section-title" id="section-libraries">Current project under development</h1>
+
+            
+            <a class="clickable-div" href="diagnosly/diagnosly.html">
+                <div class="section header-section center-section">                
+                    <h1 class="inline">Diagnosly</h1>
+                    </br>
+                    <img src="imgs/diagnosly/logo.png" alt="Diagnosly logo" class="hero-logo">
+                    </br>
+                    <p class="tagline">A healthcare Assistant on your mobile phone</p>
+                    <span class="bottom-right-text">Link →</span>
+                </div> 
+            </a>
+
+            <div id="contact" class="section contact-section">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <p>Have questions? Want to know more? Business inquiries?</p>
+                    <p>Contact: <a href="mailto:brian@criaphore.com" class="contact-email">brian@criaphore.com</a></p>
                 </div>
             </div>
 
-            <div id="part-content">
-                <div class="section header-section center-section">
-                    <h1 class="inline">Criaphore</h1>
-                    <img src="imgs/criaphore.png" alt="Criaphore logo" class="hero-logo">
-                    <p class="tagline">Your Personal AI Healthcare Partner</p>
-                </div>
-
-                <div id="download" class="section download-section">
-                    <h2>Get started soon...</h2>
-                    <p>Criaphore will be available on iOS and Android early 2025</p>
-                    <div class="app-buttons">
-                        <a href="#" class="app-button">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" 
-                                 alt="Download on App Store" 
-                                 class="store-badge">
-                        </a>
-                        <a href="#" class="app-button">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
-                                 alt="Get it on Google Play" 
-                                 class="store-badge">
-                        </a>
-                    </div>
-                </div>
-
-                <div id="features" class="features-section">
-                    <h2 class="section-title">Features</h2>
-                    <div class="shelf">
-                        <div class="box">
-                            <img src="imgs/doc.png" 
-                                 alt="24/7 Health Support illustration" 
-                                 loading="lazy">
-                            <h2>24/7 Health Support</h2>
-                            <p>Access medical information and preliminary assessments anytime, anywhere. Criaphore is always ready to help guide you through health concerns.</p>
-                        </div>
-                        <div class="box">
-                            <img src="imgs/criaphore.png" 
-                                 alt="Smart Monitoring illustration" 
-                                 loading="lazy">
-                            <h2>Smart Monitoring</h2>
-                            <p>Track your vital signs, medications, and symptoms with intelligent pattern recognition to provide personalized health insights.</p>
-                        </div>
-                        <div class="box">
-                            <img src="imgs/ai-privacy.png" 
-                                 alt="Privacy & Security illustration" 
-                                 loading="lazy">
-                            <h2>Privacy & Security</h2>
-                            <p>In device storage only, no data is shared with third parties. Your health data is yours.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="aboutus" class="section about-section">
-                    <h2 class="section-title">The vision</h2>
-                    <div class="about-content">
-                        <div class="about-text">
-                            <p>Criaphore is revolutionizing healthcare through artificial intelligence. The vision is to make quality healthcare accessible to everyone, everywhere, at any time.</p>
-                            <p>Your health and the health of your loved ones is the most important thing in your life, and Criaphore is here to help you take care of it.</p>
-                        </div>
-                    </div>
-                </div>
-            
-
-                <div id="contact" class="section contact-section">
-                    <h2 class="section-title">Contact</h2>
-                    <div class="contact-content">
-                        <p>Have questions? Want to know more? Business inquiries?</p>
-                        <p>Email at: <a href="mailto:brian@criaphore.com" class="contact-email">brian@criaphore.com</a></p>
-                    </div>
-                </div>
-
-                <div class="footer">
-                    <p>@ 2025 Criaphore trademark</p>
-                    <p>
-                        <a href="privacy.html" class="footer-link">Privacy Policy</a> | 
-                        <a href="terms.html" class="footer-link">Terms & Conditions</a>
-                    </p>
-                </div>
-            </div>            
-        </div>
-    </body>
+            <div class="footer">
+                <p>© 2025 Criaphore. All rights reserved.</p>
+            </div>
+        </div>            
+    </div>
+</body>
 </html>

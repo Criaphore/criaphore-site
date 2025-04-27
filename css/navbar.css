@@ -48,6 +48,19 @@
     white-space: nowrap;
 }
 
+.separator {
+  padding: 0 10px; /* space around the | */
+  color: var(--text-color);
+  opacity: 0.5;
+}
+
+/* Hide the | on mobile */
+@media (max-width: 768px) {
+  .separator {
+    display: none;
+  }
+}
+
 /* Mobile adjustments */
 @media (max-width: 768px) {
     .sticky-header {
