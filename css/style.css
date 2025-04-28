@@ -150,6 +150,7 @@ h2.section-title {
 
 .box {
     flex: 0 0 300px;
+    min-width: 0;
     min-height: 300px;
     padding: 2rem;
     background-color: var(--bkg-top);
@@ -221,12 +222,35 @@ h2.section-title {
     opacity: 0.8;
 }
 
-/* Responsive */
+
 @media (max-width: 480px) {
     .nav-links { gap: 1rem; }
     .app-buttons {
         flex-direction: column;
         align-items: center;
+    }
+    .banner-image {
+        max-width: 100%;
+        width: 100%;
+    }
+    .box {
+        flex: 1 1 200px;
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+        padding: 0.7rem;
+    }
+    .header-section,
+    .center-section {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+    .header-section h1,
+    .title-logo h1,
+    .section-title {
+        font-size: 1.4rem !important;
     }
 }
 
@@ -315,10 +339,9 @@ h2.section-title {
     margin: 0 auto;
     border: 2px solid #000;
     border-radius: 8px;
-    max-width: 90%;
-    height: auto;
-    width: auto;
+    width: 100%;
     max-width: 500px;
+    height: auto;
 }
 
 .download-section h2 {
@@ -335,4 +358,12 @@ h2.section-title {
     right: 20px;
     text-decoration: none;
     cursor: pointer;
+}
+
+.download-section,
+.about-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    box-sizing: border-box;
 }
