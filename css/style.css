@@ -367,3 +367,34 @@ h2.section-title {
     margin: 0 auto 2rem auto;
     box-sizing: border-box;
 }
+
+.waiting-list-form {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.waiting-list-form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.waiting-list-form button {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.waiting-list-form button:hover {
+    background-color: var(--primary-hover);
+}
