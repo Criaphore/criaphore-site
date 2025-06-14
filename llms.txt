@@ -11,6 +11,6 @@ Criaphore is SaaS company creating applications in service of people powered by 
 ## Optional
 
 - [Website](https://criaphore.com/)
-- [Support](mailto:brian@criaphore.com)
+- [Support](mailto:contact@criaphore.com)
 - [Privacy Policy](https://criaphore.com/diagnosly/privacy.html)
 - [Terms of Service](https://criaphore.com/diagnosly/terms.html)
