@@ -1,171 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Diagnosly</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Diagnosly landing page">
-  <meta name="author" content="Brian Giannini">
-  <meta name="theme-color" content="#8fffff">
-  <meta name="color-scheme" content="light dark">
-      
+  <title>Diagnosly | Personal Health Assistant</title>
+  <meta name="description" content="Diagnosly - Your personal AI healthcare assistant.">
+  <meta name="theme-color" content="#0a0a0a">
+
   <link rel="icon" type="image/png" href="../imgs/diagnosly/fav/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../imgs/diagnosly/fav/favicon.svg" />
   <link rel="shortcut icon" href="../imgs/diagnosly/fav/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="../imgs/diagnosly/fav/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Diagnosly" />
-  <link rel="manifest" href="../imgs/diagnosly/fav/site.webmanifest" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/switch.css">
-  <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Diagnosly" />
-  <meta property="og:description" content="Your personal health Assistant" />
-  <meta property="og:image" content="https://criaphore.com/imgs/diagnosly/banner.png" />
-  <meta property="og:url" content="https://criaphore.com/diagnosly/diagnosly.html" />
   <meta property="og:type" content="website" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Diagnosly">
-  <meta name="twitter:description" content="Your personal health Assistant">
-  <meta name="twitter:image" content="https://criaphore.com/imgs/diagnosly/banner.png">
 </head>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script type="text/javascript" src="../scripts/toggle-dark-mode.js"></script>
-<script type="text/javascript" src="../scripts/hamburger.js"></script>
-<script src="../scripts/waiting-list.js"></script>
-
 <body>
-  <div class="container">
-      <div class="sticky-header" id="part-pannel">
-          <div class="header-left">
-              <a href="../index.html">
-                  <img src="../imgs/criaphore/criaphore.png" alt="Criaphore logo" class="header-logo">
-              </a>
-          </div>
-          <div class="header-center">
-              <button class="hamburger" aria-label="Menu">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-              </button>
-              <nav class="nav-menu">
-                <ul class="nav-links">
-                  <li><a href="#download">Download</a></li>
-                  <li class="separator">|</li>
-                  <li><a href="#features">How it works</a></li>
-                  <li class="separator">|</li>
-                  <li><a href="#aboutus">Our Purpose</a></li>
-                  <li class="separator">|</li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </nav>
-          </div>
+  <div class="background-glow"></div>
 
-          <div class="header-right">
-              <label class="switch">
-                  <input type="checkbox" id="checkbox-change" aria-label="Toggle dark mode">
-                  <span class="slider round"></span>
-              </label>
-          </div>
-      </div>
+  <nav class="navbar glass">
+    <a href="../index.html" class="brand">
+      <img src="../imgs/criaphore/criaphore.png" alt="Criaphore Logo">
+      <span>Criaphore</span>
+    </a>
 
-      <div id="part-content">
+    <div class="navbar-links">
+      <a href="#download">Download</a>
+      <a href="#features">Features</a>
+      <a href="#aboutus">Purpose</a>
+    </div>
+  </nav>
 
-          <div id="download" class="section download-section">
-              <h1>Diagnosly</h1>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="download">
+      <div class="hero-content">
+        <h1 class="hero-title">Diagnosly</h1>
+        <img src="../imgs/diagnosly/banner.png" alt="Diagnosly Banner" class="scroll-hidden banner-img">
+        <p class="tagline">An AI companion to understand symptoms and manage personal health.</p>
 
-              <img src="../imgs/diagnosly/banner.png" class="banner-image" alt="Diagnosly Banner">
-              <p>Your AI companion to understand your symptoms and manage your health</p>
+        <div class="app-buttons scroll-hidden app-buttons-container">
 
-              <h2>Download on Android</h2>
-
-              <div class="app-buttons">
-                <a href="https://diagnosly.criaphore.com/track?utm_source=website&utm_medium=content&utm_campaign=beta-launch&platform=android" class="app-button">
-                  <img src="../imgs/common/playstore.svg" alt="Get it on Google Play" class="store-badge">
-                </a>
-              </div>
-
-              <h2>Waiting List for iOS</h2>
-
-              <div class="app-buttons">
-                <img src="../imgs/common/applestore.svg" alt="Coming soon on App Store" class="store-badge">
-              </div>
-            
-
-              <div class="waiting-list-form">
-                <form id="waiting-list-form" action="https://assets.mailerlite.com/jsonp/1482596/forms/152954590783866814/subscribe" method="post">
-                  <input type="email" name="fields[email]" placeholder="Enter your email" required>
-                  <button type="submit">Join Waiting List</button>
-                </form>
-              </div>
-
+          <!-- Android - Direct Link -->
+          <div>
+            <a
+              href="https://diagnosly.criaphore.com/track?utm_source=website&utm_medium=content&utm_campaign=beta-launch&platform=android">
+              <img src="../imgs/common/playstore.svg" alt="Get it on Google Play" class="store-badge">
+            </a>
           </div>
 
-          <div id="features" class="features-section">
+          <!-- iOS - Waiting List -->
+          <div class="waitlist-container">
+            <img src="../imgs/common/applestore.svg" alt="Coming soon on App Store" class="store-badge store-badge-dim">
+            <p class="text-sm text-muted text-mb-sm">Join the waiting list for iOS</p>
 
-              <h2 class="section-title">How it works</h2>
-
-              <div class="shelf">
-
-                  <div class="box">
-                      <img src="../imgs/diagnosly/doc.png" alt="24/7 Health Support illustration" loading="lazy">
-                      <h2>24/7 Health Support</h2>
-                      <p>Access medical information and preliminary assessments anytime, anywhere. Diagnosly is always ready to help guide you through health concerns.</p>
-                  </div>
-
-                  <div class="box">
-                      <img src="../imgs/diagnosly/logo.png" alt="Smart Monitoring illustration" loading="lazy">
-                      <h2>Smart Monitoring</h2>
-                      <p>Track your vital signs, medications, and symptoms with intelligent pattern recognition to provide personalized health insights.</p>
-                  </div>
-
-                  <div class="box">
-                      <img src="../imgs/diagnosly/ai-privacy.png" alt="Privacy & Security illustration" loading="lazy">
-                      <h2>Privacy & Security</h2>
-                      <p>In device storage only, no data is shared with third parties. Your health data is yours.</p>
-                  </div>
-
-              </div>
+            <form id="waiting-list-form"
+              action="https://assets.mailerlite.com/jsonp/1482596/forms/152954590783866814/subscribe" method="post"
+              class="inline-form">
+              <input type="email" name="fields[email]" placeholder="Enter your email" required class="rounded-input">
+              <button type="submit" class="btn btn-no-margin">Join</button>
+            </form>
           </div>
-
-          <div id="aboutus" class="section about-section">
-
-              <h2 class="section-title">Our Purpose</h2>
-
-              <div class="about-content">
-                  <div class="about-text">
-                      <p>Diagnosly is revolutionizing healthcare through artificial intelligence. Our purpose is to make quality healthcare accessible to everyone, everywhere, at any time.</p>
-                      <p>Your health and the health of your loved ones are the most important things in your life, and Diagnosly is here to help you take care of it.</p>
-                  </div>
-              </div>
-
-          </div>            
-
-          <div id="contact" class="section contact-section">
-
-              <h2 class="section-title">Contact</h2>
-
-              <div class="contact-content">
-                  <p>Have questions? Want to know more? Business inquiries?</p>
-                  <p>Contact: <a href="mailto:contact@criaphore.com" class="contact-email">contact@criaphore.com</a></p>
-              </div>
-
-          </div>
-
-        <div class="footer">
-          <p>© 2025 Diagnosly. All rights reserved.</p>
-          <p>
-            <a href="privacy.html" class="footer-link">Privacy Policy</a> | 
-            <a href="terms.html" class="footer-link">Terms & Conditions</a>
-          </p>
         </div>
-      </div>            
-  </div>
+
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="scroll-container" id="features">
+      <h2 class="section-title scroll-hidden">System Overview</h2>
+
+      <div class="features-grid">
+        <div class="feature-card scroll-hidden">
+          <img src="../imgs/diagnosly/doc.png" alt="24/7 Support">
+          <h3>24/7 Health Support</h3>
+          <p>Access medical information and preliminary assessments anytime, anywhere.</p>
+        </div>
+
+        <div class="feature-card scroll-hidden" style="transition-delay: 0.1s;">
+          <img src="../imgs/diagnosly/logo.png" alt="Smart Monitoring">
+          <h3>Smart Monitoring</h3>
+          <p>Track vital signs, medications, and symptoms with intelligent pattern recognition.</p>
+        </div>
+
+        <div class="feature-card scroll-hidden" style="transition-delay: 0.2s;">
+          <img src="../imgs/diagnosly/ai-privacy.png" alt="Privacy First">
+          <h3>Privacy & Security</h3>
+          <p>On-device processing ensuring health data remains private and secure.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="scroll-container" id="aboutus">
+      <div class="glass centered-glass-card">
+        <h2 class="section-title text-mb-md">Purpose</h2>
+        <p class="text-lg text-muted text-mb-sm">
+          Diagnosly aims to revolutionize healthcare through artificial intelligence, making quality healthcare insights
+          accessible to everyone, everywhere.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Diagnosly. All rights reserved.</p>
+    <div class="footer-links-container">
+      <a href="privacy.html" class="footer-link">Privacy Policy</a>
+      <a href="terms.html" class="footer-link">Terms & Conditions</a>
+    </div>
+  </footer>
+
+  <script src="../scripts/scroll-animations.js"></script>
+  <script src="../scripts/waiting-list.js"></script>
 </body>
+
 </html>

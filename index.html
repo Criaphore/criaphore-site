@@ -1,99 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Criaphore</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Criaphore apps presentation">
-    <meta name="author" content="Brian Giannini">
-    <meta name="theme-color" content="#8fffff">
-    <meta name="color-scheme" content="light dark">
-    
+    <title>Criaphore | Intelligent Applications</title>
+    <meta name="description" content="Criaphore - Crafting AI-powered apps that make life easier.">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <!-- Favicons -->
     <link rel="icon" type="image/png" href="imgs/criaphore/fav/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="imgs/criaphore/fav/favicon.svg" />
     <link rel="shortcut icon" href="imgs/criaphore/fav/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="imgs/criaphore/fav/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Criaphore" />
-    <link rel="manifest" href="imgs/criaphore/fav/site.webmanifest" />
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/switch.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap">
-    
+
     <!-- Open Graph -->
     <meta property="og:title" content="Criaphore" />
-    <meta property="og:description" content="Criaphore company presentation" />
+    <meta property="og:description" content="Crafting AI-powered apps that make life easier." />
     <meta property="og:image" content="https://criaphore.com/imgs/criaphore/criaphore.png" />
     <meta property="og:url" content="https://criaphore.com" />
     <meta property="og:type" content="website" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Criaphore">
-    <meta name="twitter:description" content="Criaphore available apps">
-    <meta name="twitter:image" content="https://criaphore.com/imgs/criaphore/criaphore.png">
 </head>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/toggle-dark-mode.js"></script>
-<script type="text/javascript" src="scripts/hamburger.js"></script>
-
 <body>
-    <div class="container">
-        <div class="sticky-header" id="part-pannel">
-            <div class="header-left">
-                <a href="#part-content">
-                    <img src="imgs/criaphore/criaphore.png" alt="Criaphore logo" class="header-logo">
-                    <span class="brand"></span>
-                </a>
-            </div>
-            <div class="header-center">               
-            </div>
-            <div class="header-right">
-                <label class="switch">
-                    <input type="checkbox" id="checkbox-change" aria-label="Toggle dark mode">
-                    <span class="slider round"></span>
-                </label>
-            </div>
+    <div class="background-glow"></div>
+
+    <nav class="navbar glass">
+        <a href="#" class="brand">
+            <img src="imgs/criaphore/criaphore.png" alt="Criaphore Logo">
+            <span>Criaphore</span>
+        </a>
+
+        <div class="navbar-links">
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
+    </nav>
 
-        <div id="part-content">
-
-            <div class="section header-section center-section">
-                <div class="title-logo">
-                  <h1 class="inline">Criaphore</h1>
-                  <img src="imgs/criaphore/criaphore.png" alt="Criaphore logo" class="hero-logo-small">
-                </div>
-                <p class="tagline">Creating AI-powered apps that make life easier.</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Potential Unlocked</h1>
+                <p class="tagline">Creating smart applications that handle the hard work for you. Focus on your goals,
+                    and let the software handle the rest</p>
+                <img src="imgs/criaphore/criaphore.png" alt="Criaphore" class="scroll-hidden hero-logo-img">
             </div>
+        </section>
 
-            <h1 class="section-title" id="section-libraries">Current project under development</h1>
+        <!-- Projects Section -->
+        <section class="scroll-container" id="projects">
+            <h2 class="section-title scroll-hidden">Active Projects</h2>
 
-            
-            <a class="clickable-div" href="diagnosly/diagnosly.html">
-                <div class="section header-section center-section">                
-                    <h1 class="inline">Diagnosly</h1>
-                    </br>
-                    <img src="imgs/diagnosly/logo.png" alt="Diagnosly logo" class="hero-logo">
-                    </br>
-                    <p class="tagline">A healthcare Assistant on your mobile phone</p>
-                    <span class="bottom-right-text">Link →</span>
-                </div> 
+            <a href="diagnosly/diagnosly.html" class="project-card glass scroll-hidden">
+                <img src="imgs/diagnosly/logo.png" alt="Diagnosly Logo" class="project-logo">
+                <div class="project-info">
+                    <h2>Diagnosly</h2>
+                    <p>A personal AI healthcare assistant. Intelligent diagnostics available at any moment.</p>
+                </div>
+                <div class="link-arrow">
+                    Explore Project <span>&rarr;</span>
+                </div>
             </a>
 
-            <div id="contact" class="section contact-section">
-                <h2 class="section-title">Contact</h2>
-                <div class="contact-content">
-                    <p>Have questions? Want to know more? Business inquiries?</p>
-                    <p>Contact: <a href="mailto:contact@criaphore.com" class="contact-email">contact@criaphore.com</a></p>
+            <!-- Upcoming Project 2026 -->
+            <div class="project-card upcoming glass scroll-hidden">
+                <div class="project-x-placeholder">?</div>
+                <div class="project-info">
+                    <h2>Upcoming Project</h2>
+                    <p>Coming 2026</p>
                 </div>
             </div>
 
-            <div class="footer">
-                <p>© 2025 Criaphore. All rights reserved.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="scroll-container" id="contact">
+            <div class="glass project-card scroll-hidden centered-glass-card">
+                <h2 class="section-title text-mb-md">Get in Touch</h2>
+                <p class="text-center text-lg text-mb-lg text-muted">
+                    Interested in collaboration or have an inquiry?
+                </p>
+                <div class="contact-links text-center">
+                    <a href="mailto:contact@criaphore.com" class="contact-link-large">contact@criaphore.com</a>
+                </div>
             </div>
-        </div>            
-    </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Criaphore. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/scroll-animations.js"></script>
 </body>
+
 </html>

@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Page not found - Criaphore</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | Criaphore</title>
+  <meta name="theme-color" content="#0a0a0a">
+
+  <link rel="icon" type="image/png" href="imgs/criaphore/fav/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="imgs/criaphore/fav/favicon.svg" />
+  <link rel="shortcut icon" href="imgs/criaphore/fav/favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/switch.css">
-  <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap">
 </head>
+
 <body>
-  <div class="container">
-    <div class="section header-section center-section">
-      <div class="title-logo">
-        <h1>404 - Oups!</h1>
-      </div>
-      <img class="hero-logo" src="imgs/criaphore/criaphore.png" alt="Criaphore logo">
-      <p class="tagline">This page doesn't exist.</p>
-      <a href="index.html" class="footer-link">Back to index</a>
+  <div class="background-glow"></div>
+
+  <nav class="navbar glass">
+    <a href="index.html" class="brand">
+      <img src="imgs/criaphore/criaphore.png" alt="Criaphore Logo">
+      <span>Criaphore</span>
+    </a>
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
     </div>
-  </div>
+  </nav>
+
+  <main class="full-screen-center">
+    <div class="glass centered-glass-card scroll-hidden">
+      <h1 class="hero-title hero-404">404</h1>
+      <h2 class="text-xl text-mb-md">Page Not Found</h2>
+      <p class="text-muted text-mb-lg">
+        The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+      </p>
+
+      <a href="index.html" class="btn btn-no-margin">Back to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Criaphore. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/scroll-animations.js"></script>
 </body>
+
 </html>
