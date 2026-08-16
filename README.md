@@ -29,7 +29,7 @@ It is designed to be simple, clean, and user-friendly, providing visitors with e
 
 ### 🔹 Orbora App
 
-- `orbora/index.html` – Landing page for Orbora (AI wellness & bio-harmonics),
+- `orbora/index.html` – Landing page for Orbora (Generative audio wellness agentic app),
 - `orbora/privacy/index.html` – Privacy policy,
 - `orbora/terms/index.html` – Terms & Conditions,
 
