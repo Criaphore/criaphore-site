@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy | Diagnosly</title>
+    <meta name="description" content="Privacy Policy for Diagnosly AI personal health assistant.">
     <link rel="canonical" href="https://criaphore.com/diagnosly/privacy.html" />
     <meta name="theme-color" content="#0a0a0a">
+
+    <link rel="icon" type="image/png" href="../imgs/diagnosly/fav/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../imgs/diagnosly/fav/favicon.svg" />
+    <link rel="shortcut icon" href="../imgs/diagnosly/fav/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -19,32 +27,64 @@
             <img src="../imgs/diagnosly/logo.png" alt="Diagnosly Logo">
             <span>Diagnosly</span>
         </a>
+
+        <div class="navbar-links">
+            <a href="./">&larr; Back to App</a>
+            <a href="../">Criaphore</a>
+        </div>
     </nav>
 
     <main>
-        <div class="text-container glass">
-            <h1>Privacy Policy</h1>
-            <p>Last updated: December 2025</p>
+        <div class="legal-container glass scroll-hidden">
+            <div class="legal-header">
+                <span class="legal-badge">Legal Documentation</span>
+                <h1 class="legal-title">Privacy Policy</h1>
+                <p class="legal-date">Last updated: August 2026</p>
+            </div>
 
-            <h2>1. Introduction</h2>
-            <p>Diagnosly ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains
-                how your personal information is collected, used, and disclosed by Diagnosly.</p>
+            <div class="legal-section">
+                <h2>1. Introduction</h2>
+                <p>Diagnosly ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal health information is collected, processed, and safeguarded when using Diagnosly.</p>
+            </div>
 
-            <h2>2. Data Collection</h2>
-            <p>We prioritize your privacy. Most data processing happens on your device. We do not sell your personal
-                health data.</p>
+            <div class="legal-section">
+                <h2>2. Data Collection &amp; On-Device Processing</h2>
+                <p>We prioritize personal privacy and data sovereignty above all else:</p>
+                <div class="legal-highlight-box">
+                    <p>🔒 <strong>Privacy Guarantee:</strong> Health assessment queries and pattern recognitions are processed on-device whenever possible. We do not sell, rent, or monetize your health data.</p>
+                </div>
+                <p>Any telemetry or operational logs collected are strictly anonymized and used exclusively to maintain service reliability.</p>
+            </div>
 
-            <h2>3. Usage</h2>
-            <p>We use the collected data to provide and improve our services, including personalized health insights.
-            </p>
+            <div class="legal-section">
+                <h2>3. How We Use Information</h2>
+                <p>Information processed by the application is utilized solely to:</p>
+                <ul>
+                    <li>Provide personalized preliminary health assessment insights.</li>
+                    <li>Recognize symptom patterns and provide relevant educational health resources.</li>
+                    <li>Continuously enhance system performance and security protections.</li>
+                </ul>
+            </div>
 
-            <h2>4. Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at contact@criaphore.com.</p>
+            <div class="legal-section">
+                <h2>4. Data Security</h2>
+                <p>We implement industry-standard encryption protocols (both in transit and at rest) to ensure that your sensitive personal data remains confidential and secure against unauthorized access.</p>
+            </div>
+
+            <div class="legal-section">
+                <h2>5. Contact Us</h2>
+                <p>If you have any questions or concerns regarding this Privacy Policy, please contact our privacy team at <a href="mailto:contact@criaphore.com" class="footer-link">contact@criaphore.com</a>.</p>
+            </div>
         </div>
     </main>
 
     <footer>
         <p>&copy; <span id="copyright-year">2024 - 2026</span> Diagnosly. All rights reserved.</p>
+        <div class="footer-links-container">
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            <a href="terms.html" class="footer-link">Terms &amp; Conditions</a>
+            <a href="./" class="footer-link">Home</a>
+        </div>
     </footer>
 
     <script src="../scripts/copyright.js"></script>
