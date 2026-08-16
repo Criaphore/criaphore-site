@@ -4,7 +4,7 @@ const observerOptions = {
     threshold: 0.1
 };
 
-const observer = new IntersectionObserver((entries, observer) => {
+const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('scroll-show');
@@ -18,11 +18,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    }
+
+    // Smart Back Navigation: return directly to exact previous position without jump/animation reset
+    const backLinks = document.querySelectorAll('a.brand[title*="Back"], .navbar-links a[href*="Back"]');
+    backLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (window.history.length > 1 && document.referrer && document.referrer.includes(window.location.host)) {
+                e.preventDefault();
+                window.history.back();
+            }
+        });
     });
 });
