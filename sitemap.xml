@@ -13,14 +13,14 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://criaphore.com/diagnosly/privacy.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <loc>https://criaphore.com/diagnosly/privacy/</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://criaphore.com/diagnosly/terms.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <loc>https://criaphore.com/diagnosly/terms/</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -31,13 +31,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://criaphore.com/orbora/privacy.html</loc>
+    <loc>https://criaphore.com/orbora/privacy/</loc>
     <lastmod>2026-08-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://criaphore.com/orbora/terms.html</loc>
+    <loc>https://criaphore.com/orbora/terms/</loc>
     <lastmod>2026-08-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

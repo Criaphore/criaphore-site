@@ -30,8 +30,8 @@ It is designed to be simple, clean, and user-friendly, providing visitors with e
 ### 🔹 Orbora App
 
 - `orbora/index.html` – Landing page for Orbora (AI wellness & bio-harmonics),
-- `orbora/privacy.html` – Privacy policy,
-- `orbora/terms.html` – Terms & Conditions,
+- `orbora/privacy/index.html` – Privacy policy,
+- `orbora/terms/index.html` – Terms & Conditions,
 
 ### 🔹 Diagnosly App
 
@@ -40,8 +40,8 @@ It is designed to be simple, clean, and user-friendly, providing visitors with e
   - How it works,  
   - Download link for Android,  
   - iOS waiting list signup form,
-- `diagnosly/privacy.html` – Privacy policy,
-- `diagnosly/terms.html` – Terms & Conditions,
+- `diagnosly/privacy/index.html` – Privacy policy,
+- `diagnosly/terms/index.html` – Terms & Conditions,
 - `diagnosly/dashboard.html` – Internal dashboard showing link statistics,
 
 ### 🔹 Utility Pages
