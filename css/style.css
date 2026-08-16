@@ -73,7 +73,8 @@ h3 {
 }
 
 h1.hero-title {
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(2.2rem, 5.2vw, 4.5rem);
+    white-space: nowrap;
     background: linear-gradient(135deg, var(--text-main) 0%, var(--primary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -184,8 +185,11 @@ h1.hero-title {
 }
 
 .hero-content {
-    max-width: 900px;
+    max-width: 1100px;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tagline {
@@ -201,6 +205,13 @@ h1.hero-title {
 /* Cards / Projects */
 .scroll-container {
     padding: 2rem 5%;
+    scroll-margin-top: 120px;
+}
+
+#projects,
+#archived,
+#contact {
+    scroll-margin-top: 120px;
 }
 
 .project-card {
@@ -533,206 +544,63 @@ footer {
     border: 1px solid var(--bg-card-border);
     background: var(--bg-card);
     color: white;
-    text-align: center;
-    transition: transform 0.3s ease;
-    color: var(--text-main);
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--primary-glow);
-}
-
-.feature-card img {
-    height: 100px;
-    margin-bottom: 1.5rem;
-    object-fit: contain;
-}
-
-.feature-card h3 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-.feature-card p {
-    color: var(--text-muted);
-}
-
-/* Text Content Pages (Privacy/Terms) */
-.text-container {
-    max-width: 800px;
-    margin: 120px auto 4rem;
-    padding: 3rem;
-    background: var(--bg-card);
-    backdrop-filter: blur(12px);
-    border: 1px solid var(--bg-card-border);
-    border-radius: var(--border-radius);
-}
-
-.text-container h1 {
-    font-size: 2.5rem;
-    color: var(--primary);
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.text-container h2 {
-    font-size: 1.8rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: var(--text-main);
-}
-
-.text-container p,
-.text-container ul {
-    margin-bottom: 1.2rem;
-    color: var(--text-muted);
-}
-
-.text-container ul {
-    padding-left: 2rem;
-}
-
-/* Buttons and store badges */
-.btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background: var(--primary);
-    color: #000;
-    font-weight: 700;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    margin-top: 1rem;
-    border: none;
-    cursor: pointer;
-}
-
-.btn:hover {
-    box-shadow: 0 0 20px var(--primary-glow);
-    transform: scale(1.05);
-}
-
-.store-badge {
-    height: 50px;
-    margin: 10px;
-    transition: transform 0.2s;
-}
-
-.store-badge:hover {
-    transform: translateY(-3px);
-}
-
-/* -- Refactored Inline Styles -- */
-
-/* Hero Utilities */
-.hero-logo-img {
-    max-width: 200px;
-    opacity: 0.8;
-    filter: drop-shadow(0 0 30px var(--primary-glow));
-}
-
-.banner-img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    margin: 2rem 0;
-}
-
-/* Project Placeholders */
-.project-x-placeholder {
-    width: 150px;
-    height: 150px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 50%;
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: var(--text-muted);
-}
-
-/* Glass Cards Utilities */
-.centered-glass-card {
-    max-width: 800px;
-    padding: 3rem;
-    margin: 0 auto;
-    /* centered horizontally */
-    text-align: center;
-    /* default for these cards */
-}
-
-/* Text Utilities */
-.text-mb-sm {
-    margin-bottom: 1rem;
-}
-
-.text-mb-md {
-    margin-bottom: 1.5rem;
-}
-
-.text-mb-lg {
-    margin-bottom: 2rem;
-}
-
-.text-lg {
-    font-size: 1.2rem;
-}
-
-.text-xl {
-    font-size: 1.5rem;
-}
-
-.text-muted {
-    color: var(--text-muted);
-}
-
-.footer-links-container {
-    margin-top: 1rem;
-}
-
-.footer-link {
-    color: var(--primary);
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-/* App & Form Utilities */
-.app-buttons-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-.waitlist-container {
-    text-align: center;
-}
-
-.store-badge-dim {
-    opacity: 0.9;
-}
-
-.inline-form {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-.rounded-input {
-    padding: 12px;
-    border-radius: 50px;
-    border: 1px solid var(--bg-card-border);
-    background: var(--bg-card);
-    color: white;
     width: 250px;
 }
 
 .btn-no-margin {
     margin-top: 0;
+}
+
+/* Scroll Down Button */
+.scroll-down-btn {
+    margin-top: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--bg-card);
+    border: 1px solid var(--bg-card-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: bounce 2s infinite ease-in-out;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.scroll-down-btn svg {
+    width: 22px;
+    height: 22px;
+    stroke: currentColor;
+    stroke-width: 2.2;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.2s ease;
+}
+
+.scroll-down-btn:hover {
+    border-color: var(--primary);
+    background: rgba(85, 174, 183, 0.15);
+    box-shadow: 0 0 25px var(--primary-glow);
+    transform: scale(1.12);
+}
+
+.scroll-down-btn:hover svg {
+    transform: translateY(3px);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
 }
 
 /* 404 Page Specifics */
@@ -747,4 +615,12 @@ footer {
     font-size: 8rem;
     margin-bottom: 0;
     line-height: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1.hero-title {
+        font-size: clamp(1.8rem, 8vw, 2.8rem);
+        white-space: normal;
+    }
 }

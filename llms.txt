@@ -6,7 +6,7 @@ Criaphore is SaaS company creating applications in service of people powered by 
 
 ## Applications
 
-[Diagnosly](https://criaphore.com/diagnosly/diagnosly.html): Health application for medical diagnosis powered by AI developed by Criaphore
+[Diagnosly](https://criaphore.com/diagnosly/): Health application for medical diagnosis powered by AI developed by Criaphore
 
 ## Optional
 

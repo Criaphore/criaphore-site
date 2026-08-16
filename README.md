@@ -29,7 +29,7 @@ It is designed to be simple, clean, and user-friendly, providing visitors with e
 
 ### 🔹 Diagnosly App
 
-- `diagnosly/diagnosly.html` – Landing page for Diagnosly with:  
+- `diagnosly/index.html` – Landing page for Diagnosly with:  
   - App description and purpose,  
   - How it works,  
   - Download link for Android,  
