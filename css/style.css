@@ -216,11 +216,12 @@ h1.hero-title {
 
 .project-card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 4rem;
-    margin: 4rem auto;
+    padding: 3rem 3.5rem;
+    margin: 3rem auto;
     max-width: 1000px;
+    gap: 2.5rem;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.27), border-color 0.4s ease;
     text-decoration: none;
     color: var(--text-main);
@@ -229,7 +230,7 @@ h1.hero-title {
 }
 
 .project-card:hover {
-    transform: translateY(-10px) scale(1.02);
+    transform: translateY(-8px) scale(1.015);
     border-color: var(--primary-glow);
     box-shadow: 0 20px 40px -10px rgba(85, 174, 183, 0.2);
 }
@@ -248,31 +249,46 @@ h1.hero-title {
 }
 
 .project-logo {
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    flex-shrink: 0;
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.1));
 }
 
+.project-info {
+    flex: 1;
+    text-align: left;
+}
+
 .project-info h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
 }
 
 .project-info p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: var(--text-muted);
+    line-height: 1.5;
 }
 
 .link-arrow {
-    margin-top: 2rem;
+    margin-top: 0;
+    margin-left: auto;
+    flex-shrink: 0;
     font-weight: 700;
     color: var(--primary);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+    white-space: nowrap;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .link-arrow {
+    transform: translateX(6px);
 }
 
 /* Footer */
@@ -685,6 +701,24 @@ footer {
 }
 
 /* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .project-info {
+        text-align: center;
+    }
+
+    .link-arrow {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+}
+
 @media (max-width: 600px) {
     h1.hero-title {
         font-size: clamp(1.8rem, 8vw, 2.8rem);
