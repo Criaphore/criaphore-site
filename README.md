@@ -27,6 +27,12 @@ It is designed to be simple, clean, and user-friendly, providing visitors with e
 
 - `index.html` – Landing page introducing Criaphore and its vision,
 
+### 🔹 Orbora App
+
+- `orbora/index.html` – Landing page for Orbora (AI wellness & bio-harmonics),
+- `orbora/privacy.html` – Privacy policy,
+- `orbora/terms.html` – Terms & Conditions,
+
 ### 🔹 Diagnosly App
 
 - `diagnosly/index.html` – Landing page for Diagnosly with:  

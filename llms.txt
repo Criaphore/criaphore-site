@@ -6,6 +6,7 @@ Criaphore is SaaS company creating applications in service of people powered by 
 
 ## Applications
 
+[Orbora](https://criaphore.com/orbora/): AI wellness companion for bio-harmonics and mindfulness developed by Criaphore
 [Diagnosly](https://criaphore.com/diagnosly/): Health application for medical diagnosis powered by AI developed by Criaphore
 
 ## Optional
