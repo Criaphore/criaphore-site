@@ -512,19 +512,30 @@ footer {
     margin-bottom: 0.75rem;
 }
 
+.legal-section h3 {
+    font-size: 1.15rem;
+    color: var(--text-main);
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
 .legal-section p,
-.legal-section ul {
+.legal-section ul,
+.legal-section ol {
     color: var(--text-muted);
     line-height: 1.7;
     margin-bottom: 0.85rem;
     font-size: 1.05rem;
 }
 
-.legal-section ul {
+.legal-section ul,
+.legal-section ol {
     padding-left: 1.5rem;
 }
 
-.legal-section p:last-child {
+.legal-section p:last-child,
+.legal-section ol:last-child,
+.legal-section ul:last-child {
     margin-bottom: 0;
 }
 
