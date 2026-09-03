@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions | Orbora</title>
+    <meta name="description" content="Frequently Asked Questions (FAQ) for Orbora. Learn how to manage subscriptions, restore purchases, handle account data, understand credits, and get support.">
+    <link rel="canonical" href="https://criaphore.com/orbora/faq/" />
+    <meta name="theme-color" content="#0a0a0a">
+
+    <link rel="icon" type="image/png" href="../../imgs/orbora/fav/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../../imgs/orbora/fav/favicon.svg" />
+    <link rel="shortcut icon" href="../../imgs/orbora/fav/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FAQ | Orbora" />
+    <meta property="og:description" content="Frequently Asked Questions for Orbora - Subscriptions, Account, Talks, Credits & Support." />
+    <meta property="og:image" content="https://criaphore.com/imgs/orbora/banner.png" />
+    <meta property="og:url" content="https://criaphore.com/orbora/faq/" />
+    <meta property="og:type" content="website" />
+
+    <!-- FAQ Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I unsubscribe or cancel my subscription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Subscriptions are managed directly by Apple (iOS) or Google (Android). On iOS: Open device Settings > tap your Apple ID profile > Subscriptions > select Orbora > Cancel Subscription. On Android: Open Google Play Store > tap your profile icon > Payments & subscriptions > Subscriptions > select Orbora > Cancel subscription. Note: Deleting the app does not automatically cancel your subscription."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I request a refund from Google Play Store or Apple App Store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For iOS: Apple handles all billing. Visit reportaproblem.apple.com, sign in with your Apple ID, select Request a refund and choose your reason. For Android: Google provides self-service refunds. In the Google Play Store app go to Profile > Payments & subscriptions > Budget & order history > select Orbora > Request a refund, or request online via play.google.com/store/account/orderhistory."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is RevenueCat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RevenueCat is our secure in-app purchase and subscription management infrastructure partner (revenuecat.com). It acts as a reliable bridge between the Apple App Store, Google Play Store, and our servers to validate receipts and grant Pro entitlements securely without ever accessing your financial details or credit cards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I restore my purchases from RevenueCat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you reinstall the app or switch phones, open Orbora, navigate to Account > Settings (or any Pro paywall screen), and tap 'Restore Purchases'. RevenueCat will securely verify your active store receipts with Apple or Google and restore your Pro access immediately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "If I permanently delete my account or data, can I recover my talks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. When you permanently delete your account, all associated conversations, talks, favorites, and profile data are immediately purged from our servers and Firebase database for privacy and compliance. They cannot be recovered by anyone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I switch phones and keep my talks on my new device?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Your talks, profile, and active entitlements are securely linked to your registered email address. Simply download Orbora on your new device and sign in with the exact same email address to restore access."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a refund for top-up credits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Top-up credits are consumable digital goods designed for on-demand AI talk generation. In accordance with app store digital content policies, all credit purchases are final and non-refundable once acquired."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I contact the developer or customer support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can reach our engineering and support team directly via email at contact@criaphore.com. Please provide your registered account email, device model, and operating system version for fastest resolution."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <nav class="navbar glass">
+        <a href="../" class="brand" title="Back to Orbora">
+            <svg class="brand-back-arrow" viewBox="0 0 24 24">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            <img src="../../imgs/orbora/project_orbora.webp" alt="Orbora Logo">
+            <span>Orbora</span>
+        </a>
+
+        <div class="navbar-links">
+            <a href="../../">Criaphore</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="faq-container glass scroll-hidden">
+            <div class="legal-header">
+                <span class="legal-badge">Help &amp; Support Center</span>
+                <h1 class="legal-title">Frequently Asked Questions</h1>
+                <p class="legal-date">Everything you need to know about Orbora subscriptions, talks, credits, and data.</p>
+            </div>
+
+            <!-- Controls: Search & Category Filters -->
+            <div class="faq-controls">
+                <div class="faq-search-box">
+                    <svg class="faq-search-icon" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="faq-search" class="faq-search-input" placeholder="Search questions (e.g., unsubscribe, refund, credits, talks)..." aria-label="Search frequently asked questions">
+                </div>
+
+                <div class="faq-filters" role="tablist" aria-label="Filter FAQ by topic">
+                    <button class="faq-filter-btn active" data-category="all" role="tab" aria-selected="true">All Questions</button>
+                    <button class="faq-filter-btn" data-category="subscriptions" role="tab" aria-selected="false">Subscriptions &amp; Billing</button>
+                    <button class="faq-filter-btn" data-category="talks-credits" role="tab" aria-selected="false">Talks &amp; Credits</button>
+                    <button class="faq-filter-btn" data-category="account-data" role="tab" aria-selected="false">Account &amp; Data</button>
+                    <button class="faq-filter-btn" data-category="support-tech" role="tab" aria-selected="false">Support &amp; Tech</button>
+                </div>
+            </div>
+
+            <!-- Empty State for Search -->
+            <div id="faq-empty" class="faq-empty-state">
+                <h3>No matching questions found</h3>
+                <p>Try different keywords or browse through our categories above.</p>
+            </div>
+
+            <!-- Category 1: Subscriptions & Billing -->
+            <div class="faq-group" data-category="subscriptions">
+                <h2 class="faq-group-title">
+                    <span>💳</span> Subscriptions &amp; Billing
+                </h2>
+                <div class="faq-list">
+
+                    <!-- How to Unsubscribe -->
+                    <details class="faq-item" data-keywords="how to unsubscribe cancel subscription billing stop renew renewal itunes play store google apple">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                How do I unsubscribe or cancel my subscription?
+                                <span class="faq-pill-tag">iOS &amp; Android</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Because your subscription is processed securely through your mobile operating system, you can cancel it anytime directly via your device's app store settings:</p>
+                            
+                            <strong>On iPhone or iPad (Apple App Store):</strong>
+                            <ol>
+                                <li>Open your device <strong>Settings</strong> app.</li>
+                                <li>Tap your <strong>Name / Apple ID banner</strong> at the very top.</li>
+                                <li>Tap <strong>Subscriptions</strong>.</li>
+                                <li>Select <strong>Orbora</strong> from the active list.</li>
+                                <li>Tap <strong>Cancel Subscription</strong> and confirm.</li>
+                            </ol>
+
+                            <strong>On Android (Google Play Store):</strong>
+                            <ol>
+                                <li>Open the <strong>Google Play Store</strong> app.</li>
+                                <li>Tap your <strong>Profile Icon</strong> in the top right corner.</li>
+                                <li>Tap <strong>Payments &amp; subscriptions</strong> &gt; <strong>Subscriptions</strong>.</li>
+                                <li>Select <strong>Orbora</strong>.</li>
+                                <li>Tap <strong>Cancel subscription</strong> and follow the on-screen prompts.</li>
+                            </ol>
+
+                            <div class="faq-highlight-box warning">
+                                <p>⚠️ <strong>Important:</strong> Deleting or uninstalling the Orbora app from your device <strong>does not</strong> automatically cancel your recurring subscription. You must cancel via Apple or Google settings to stop future renewals. When cancelled, your Pro features remain fully accessible until the end of your current billing period.</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- What is RevenueCat -->
+                    <details class="faq-item" data-keywords="what is revenuecat revenue cat safe receipt payment platform processor security">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                What is RevenueCat?
+                                <span class="faq-pill-tag">Security</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p><a href="https://www.revenuecat.com/" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: underline; text-underline-offset: 3px;"><strong>RevenueCat</strong></a> is our verified in-app purchase and subscription infrastructure partner, trusted by thousands of leading mobile applications worldwide.</p>
+                            <p>RevenueCat communicates directly with Apple's App Store and Google Play to validate transaction receipts, sync active subscriptions, and unlock Pro features on your account.</p>
+                            <div class="faq-highlight-box">
+                                <p>🔒 <strong>Zero Financial Exposure:</strong> RevenueCat never receives, sees, or stores your credit card number or bank details. All financial transactions are handled exclusively by Apple or Google.</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Restore Purchases -->
+                    <details class="faq-item" data-keywords="how to restore purchase restore purchases from revenue cat switch phone new device reinstall subscription lost">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                How do I restore my purchases from RevenueCat?
+                                <span class="faq-pill-tag">Restoration</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>If you reinstalled the app, upgraded your operating system, or switched to a new device, you can instantly restore your active subscription without paying again:</p>
+                            <ol>
+                                <li>Ensure you are logged into the same Apple ID or Google Play account that originally made the purchase.</li>
+                                <li>Open <strong>Orbora</strong> and log into your account.</li>
+                                <li>Navigate to the <strong>Account</strong> page &gt; tap <strong>Settings</strong> &gt; tap <strong>Restore Purchases</strong> (or tap the restore option on any Pro paywall screen).</li>
+                            </ol>
+                            <p>RevenueCat will query Apple or Google, verify your active entitlement receipt, and unlock your Pro privileges within seconds.</p>
+                        </div>
+                    </details>
+
+                    <!-- Refunds on Play Store or App Store -->
+                    <details class="faq-item" data-keywords="how to refund refund play store app store apple google money back dispute charge">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                How do I request a refund from the App Store or Google Play?
+                                <span class="faq-pill-tag">Refund Policy</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>All mobile payments are handled directly by Apple and Google. Refund requests are processed directly through each store's self-service portal without needing to email the developer:</p>
+                            
+                            <strong>Apple App Store (iOS):</strong>
+                            <p>Apple manages 100% of iOS refunds directly:</p>
+                            <ol>
+                                <li>Go to <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">reportaproblem.apple.com</a>.</li>
+                                <li>Sign in with your Apple ID.</li>
+                                <li>Under <em>"What can we help you with?"</em>, select <strong>Request a refund</strong>.</li>
+                                <li>Choose the reason and select Orbora, then submit. Apple typically reviews requests within 48 hours.</li>
+                            </ol>
+
+                            <strong>Google Play Store (Android):</strong>
+                            <p>Google handles refunds directly through automated self-service:</p>
+                            <ol>
+                                <li><strong>In the Google Play Store app:</strong> Tap your <strong>Profile Icon</strong> &gt; <strong>Payments &amp; subscriptions</strong> &gt; <strong>Budget &amp; order history</strong> &gt; find Orbora &gt; tap <strong>Request a refund</strong> or <strong>Report a problem</strong>.</li>
+                                <li><strong>On the web:</strong> Visit <a href="https://play.google.com/store/account/orderhistory" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">Google Play Order History</a> or use the <a href="https://support.google.com/googleplay/workflow/9813248" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">Google Play Refund Request page</a>, select Orbora, and submit your request. Google evaluates and processes these requests directly.</li>
+                            </ol>
+                        </div>
+                    </details>
+
+                    <!-- Free Trial & Auto-Renewal -->
+                    <details class="faq-item" data-keywords="free trial charge auto renewal cancel trial before payment when charged renew">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                How does the free trial work and when will I be charged?
+                                <span class="faq-pill-tag">Billing</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>If you start a subscription tier featuring a free trial, you receive complete, unrestricted Pro access for the trial duration without any upfront charge.</p>
+                            <p>To avoid being charged, you must cancel your subscription <strong>at least 24 hours before the trial ends</strong> in your device's store settings. If you do not cancel, your trial automatically transitions into the chosen paid subscription plan.</p>
+                        </div>
+                    </details>
+
+                    <!-- Failed Payment & Grace Period -->
+                    <details class="faq-item" data-keywords="payment failed expired credit card grace period declined payment method">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                What happens if my credit card or payment method fails?
+                                <span class="faq-pill-tag">Billing</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>If an automatic renewal fails due to an expired or declined card, Apple and Google enter a <strong>billing grace period</strong>. During this window, you can update your payment method in your Apple ID or Google Play account without losing your saved settings or ongoing streaks.</p>
+                            <p>If payment is not resolved by the end of the retry window, your account simply reverts to the standard tier.</p>
+                        </div>
+                    </details>
+
+                    <!-- Cross-Platform Subscription -->
+                    <details class="faq-item" data-keywords="cross platform iphone android switch subscription ipad tablet share sync">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                Can I use my subscription across both iPhone and Android?
+                                <span class="faq-pill-tag">Cross-Platform</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p><strong>Yes!</strong> Your Pro subscription entitlement is synchronized through your Orbora account. As long as you log into the exact same email address on both your iOS and Android devices, your Pro access and benefits will be recognized on both platforms.</p>
+                            <p><em>Note: If you wish to cancel or modify your subscription plan, you must do so in the store where it was originally purchased (App Store or Google Play).</em></p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+
+            <!-- Category 2: Talks & Credits -->
+            <div class="faq-group" data-category="talks-credits">
+                <h2 class="faq-group-title">
+                    <span>🪙</span> Talks &amp; Credits
+                </h2>
+                <div class="faq-list">
+
+                    <!-- Can I refund top credits? No -->
+                    <details class="faq-item" data-keywords="can I refund top credits credit refund consumable buy credits return money">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                Can I refund top-up credits?
+                                <span class="faq-pill-tag">Credits</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p><strong>No.</strong> Top-up credits are consumable digital items provisioned immediately for high-performance AI generation, voice synthesis, and interactive talk sessions.</p>
+                            <div class="faq-highlight-box warning">
+                                <p>🛑 <strong>Non-Refundable:</strong> Because cloud compute resources are instantly allocated upon purchase, all credit pack purchases are final and non-refundable, as stated during checkout and in accordance with App Store &amp; Google Play digital consumables guidelines.</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Can I recover talks if permanently deleted? No -->
+                    <details class="faq-item" data-keywords="if permanently delete can I recover talk recovery restore talks history conversation deleted">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                If permanently deleted, can I recover my talks?
+                                <span class="faq-pill-tag">Data Policy</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p><strong>No.</strong> Under no circumstances can permanently deleted talks be recovered.</p>
+                            <p>When you delete a talk session or permanently delete your account, the records, voice audio, transcripts, and embeddings are immediately and irreversibly purged from our live Firebase database and cloud servers.</p>
+                            <div class="faq-highlight-box">
+                                <p>🛡️ <strong>Zero Retention Privacy:</strong> We uphold strict GDPR and CCPA zero-trace compliance. We do not keep shadow backups of deleted personal conversations, which means neither our automated systems nor our developers can restore purged talks.</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Switch phone to get talks? Yes, linked to email -->
+                    <details class="faq-item" data-keywords="can I switch phone to get my talks in another phone new device migrate transfer talks email">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                Can I switch phones to get my talks on another device?
+                                <span class="faq-pill-tag">Device Sync</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p><strong>Yes!</strong> All your saved talks, preferences, and credit balances are securely linked to your <strong>email address / account login</strong>, not to your physical hardware.</p>
+                            <p>To access your talks on a new phone or tablet:</p>
+                            <ol>
+                                <li>Install <strong>Orbora</strong> on your new phone.</li>
+                                <li>Sign in with the <strong>exact same email address</strong> and authentication method (e.g., Apple Sign-In or Google Sign-In) you originally used.</li>
+                                <li>Your talks, history, and active balance will automatically sync to your new device.</li>
+                            </ol>
+                        </div>
+                    </details>
+
+                    <!-- Subscription vs Credits -->
+                    <details class="faq-item" data-keywords="difference subscription top up credits difference between pro and credit pack higher tier accumulate more longer talks">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                What is the difference between the Pro Subscription and Top-Up Credits?
+                                <span class="faq-pill-tag">Usage</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p><strong>Pro is our single, all-inclusive subscription tier</strong> (there are no higher tiers). A Pro subscription gives you complete access to AI talk generation and comes with an included credit allowance.</p>
+                            <ul>
+                                <li><strong>Pro Subscription:</strong> Unlocks AI talk generation capabilities, premium soundscapes, faster cloud priority, and provides a regular monthly allowance of talk credits.</li>
+                                <li><strong>Top-Up Credits:</strong> Since Pro is already the highest tier, top-up packs exist strictly to generate <strong>more talks</strong> or <strong>longer talks</strong> whenever you need extra capacity beyond your monthly subscription allowance.</li>
+                            </ul>
+                            <div class="faq-highlight-box">
+                                <p>✨ <strong>Credits Accumulate:</strong> Credits provided by your Pro subscription are <strong>not lost</strong> at the end of the month. They roll over and accumulate in your account as long as your subscription is active!</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Do credits expire? -->
+                    <details class="faq-item" data-keywords="do credits expire top up expiration date validity unused balance accumulate rollover">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                Do credits expire or disappear at the end of the month?
+                                <span class="faq-pill-tag">Credits</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p><strong>No.</strong> Neither top-up credits nor credits granted by your Pro subscription are lost. Unused subscription credits <strong>accumulate</strong> and stack with any top-up credits you purchase.</p>
+                            <p>If you cancel your Pro subscription, any credits you have accumulated or purchased remain safely attached to your account balance for future use.</p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+
+            <!-- Category 3: Account & Data -->
+            <div class="faq-group" data-category="account-data">
+                <h2 class="faq-group-title">
+                    <span>👤</span> Account &amp; Data
+                </h2>
+                <div class="faq-list">
+
+                    <!-- How to delete app vs account -->
+                    <details class="faq-item" data-keywords="how to delete app delete account remove data uninstall erase profile gdpr">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                How do I delete the app vs. delete my account?
+                                <span class="faq-pill-tag">Account</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>There is a fundamental difference between deleting the app icon from your phone and deleting your personal data:</p>
+
+                            <strong>1. Deleting the App (Uninstalling):</strong>
+                            <p>Press and hold the Orbora app icon on your home screen &gt; select <em>Remove App</em> (iOS) or <em>Uninstall</em> (Android). This removes local cached files from your phone, but keeps your cloud profile and talks intact for whenever you reinstall.</p>
+
+                            <strong>2. Permanently Deleting Your Account &amp; Data:</strong>
+                            <p>If you want all your records permanently wiped:</p>
+                            <ol>
+                                <li>Open <strong>Orbora</strong>.</li>
+                                <li>Navigate to the <strong>Account</strong> page &gt; tap <strong>Settings</strong> &gt; <strong>Manage Account</strong>.</li>
+                                <li>Tap <strong>Delete Account</strong> and confirm.</li>
+                            </ol>
+                            
+                            <div class="faq-highlight-box warning">
+                                <p>⚠️ <strong>Critical Reminder:</strong> Deleting your account deletes your database profile, but <strong>does not</strong> automatically cancel an active Apple/Google subscription. Make sure to cancel your subscription in the App Store or Google Play Store first!</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Privacy of talks -->
+                    <details class="faq-item" data-keywords="are talks private privacy voice encryption security who can hear listen audio data sold">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                Are my talks and voice audio private?
+                                <span class="faq-pill-tag">Privacy</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p><strong>Yes, completely.</strong> Your privacy is the cornerstone of Orbora.</p>
+                            <ul>
+                                <li>All audio streaming and generation data is encrypted in transit using industry-standard TLS protocols.</li>
+                                <li>We <strong>never sell, rent, or trade</strong> your personal discussions, wellness rhythms, or voice data to third-party data brokers.</li>
+                                <li>Our team members and developers do not listen to your private audio talks.</li>
+                            </ul>
+                            <p>For more details, please review our full <a href="../privacy/" style="color: var(--primary);">Privacy Policy</a>.</p>
+                        </div>
+                    </details>
+
+                    <!-- Change login email -->
+                    <details class="faq-item" data-keywords="change email address update account login transfer account credentials">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                Can I change my account email address?
+                                <span class="faq-pill-tag">Account</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p><strong>No, not at this time.</strong> Your talks, accumulated credits, and profile data are permanently linked to the email address used when you first created your account.</p>
+                            <p>Changing your login email is not currently supported in the app (this feature is planned for a future update). If you have lost access to your email or have an exceptional situation, please reach out to <a href="mailto:contact@criaphore.com" style="color: var(--primary);">contact@criaphore.com</a>.</p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+
+            <!-- Category 4: Support & Technical -->
+            <div class="faq-group" data-category="support-tech">
+                <h2 class="faq-group-title">
+                    <span>🛠️</span> Support &amp; Technical
+                </h2>
+                <div class="faq-list">
+
+                    <!-- How to contact the dev -->
+                    <details class="faq-item" data-keywords="how to contact the dev contact developer email support help customer service inquiry bug report">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                How do I contact the developer or support?
+                                <span class="faq-pill-tag">Contact</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>You can get in touch with our team anytime via email at:</p>
+                            <p style="margin: 0.8rem 0;">
+                                <a href="mailto:contact@criaphore.com" class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 10px 24px; font-size: 0.95rem;">
+                                    ✉️ contact@criaphore.com
+                                </a>
+                            </p>
+                            <p>To help us solve your inquiry as quickly as possible, please include:</p>
+                            <ul>
+                                <li>Your registered Orbora account email address.</li>
+                                <li>Your device model (e.g., iPhone 15 Pro, Samsung Galaxy S24) and OS version.</li>
+                                <li>A brief description or screenshot of the issue you are experiencing.</li>
+                                <li>If billing-related: your Apple or Google order confirmation number.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- Offline Mode -->
+                    <details class="faq-item" data-keywords="offline mode airplane mode internet wifi connection required work without internet live conversational generate download listen saved talks">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                Can I use Orbora and listen to talks offline?
+                                <span class="faq-pill-tag">Connectivity</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Orbora talks are <strong>AI-generated audio sessions</strong> (there are no live conversational phone calls).</p>
+                            <ul>
+                                <li><strong>Generating New Talks:</strong> Generating a new talk requires an active internet connection (Wi-Fi or cellular network) because cloud AI models compose and synthesize your session in real time.</li>
+                                <li><strong>Listening to Talks Offline:</strong> Once a talk is generated and downloaded or saved to your device, you can listen to and replay your talks <strong>completely offline</strong> anywhere, anytime.</li>
+                                <li>Local meditation timers and cached soundscapes are also fully accessible without internet.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- Talk Timeout or Error -->
+                    <details class="faq-item" data-keywords="talk timeout generation failed slow response connection error troubleshooting retry">
+                        <summary class="faq-question">
+                            <span class="faq-question-text">
+                                Why did my talk or audio generation time out?
+                                <span class="faq-pill-tag">Troubleshooting</span>
+                            </span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Generation timeouts are almost always caused by a brief dip in network connectivity or temporary peak server latency.</p>
+                            <p>If you encounter an error:</p>
+                            <ol>
+                                <li>Check that your Wi-Fi or cellular data signal is active and stable.</li>
+                                <li>Toggle Airplane mode on and off to refresh your DNS route.</li>
+                                <li>Tap <strong>Retry</strong> on the session screen. If the session failed without delivering content, your credits are automatically refunded to your balance.</li>
+                            </ol>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+
+            <!-- Contact Box CTA -->
+            <div class="faq-contact-box">
+                <h3>Still have questions?</h3>
+                <p>We are here to help you get the best wellness experience. Our team responds promptly to all inquiries.</p>
+                <a href="mailto:contact@criaphore.com" class="btn">Contact Developer Support</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright-year">2024 - 2026</span> Orbora. All rights reserved.</p>
+        <div class="footer-links-container">
+            <a href="../privacy/" class="footer-link">Privacy Policy</a>
+            <a href="../terms/" class="footer-link">Terms &amp; Conditions</a>
+            <a href="./" class="footer-link active" style="color: var(--primary);">FAQ</a>
+            <a href="../" class="footer-link">Home</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../scripts/copyright.js"></script>
+    <script src="../../scripts/scroll-animations.js"></script>
+
+    <!-- FAQ Search and Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('faq-search');
+            const filterButtons = document.querySelectorAll('.faq-filter-btn');
+            const faqGroups = document.querySelectorAll('.faq-group');
+            const faqItems = document.querySelectorAll('.faq-item');
+            const emptyState = document.getElementById('faq-empty');
+
+            let currentCategory = 'all';
+            let currentSearchTerm = '';
+
+            function updateDisplay() {
+                let totalVisible = 0;
+
+                faqGroups.forEach(group => {
+                    const groupCategory = group.getAttribute('data-category');
+                    const categoryMatches = (currentCategory === 'all' || currentCategory === groupCategory);
+
+                    let visibleInGroup = 0;
+                    const itemsInGroup = group.querySelectorAll('.faq-item');
+
+                    itemsInGroup.forEach(item => {
+                        const questionText = item.querySelector('.faq-question').textContent.toLowerCase();
+                        const answerText = item.querySelector('.faq-answer').textContent.toLowerCase();
+                        const keywords = (item.getAttribute('data-keywords') || '').toLowerCase();
+
+                        const searchMatches = !currentSearchTerm || 
+                            questionText.includes(currentSearchTerm) || 
+                            answerText.includes(currentSearchTerm) || 
+                            keywords.includes(currentSearchTerm);
+
+                        if (categoryMatches && searchMatches) {
+                            item.style.display = 'block';
+                            visibleInGroup++;
+                            totalVisible++;
+                            // Auto open matching items when user searches
+                            if (currentSearchTerm.length > 2) {
+                                item.setAttribute('open', '');
+                            }
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+
+                    // Hide whole category group if no items visible in it
+                    if (visibleInGroup > 0) {
+                        group.style.display = 'block';
+                    } else {
+                        group.style.display = 'none';
+                    }
+                });
+
+                if (totalVisible === 0) {
+                    emptyState.style.display = 'block';
+                } else {
+                    emptyState.style.display = 'none';
+                }
+            }
+
+            // Search input listener
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    currentSearchTerm = e.target.value.trim().toLowerCase();
+                    updateDisplay();
+                });
+            }
+
+            // Category filter listener
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterButtons.forEach(b => {
+                        b.classList.remove('active');
+                        b.setAttribute('aria-selected', 'false');
+                    });
+                    btn.classList.add('active');
+                    btn.setAttribute('aria-selected', 'true');
+                    currentCategory = btn.getAttribute('data-category');
+                    updateDisplay();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

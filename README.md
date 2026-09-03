@@ -26,10 +26,12 @@ It is designed to be simple, clean, and user-friendly, providing visitors with e
 ### 🔹 Main Site
 
 - `index.html` – Landing page introducing Criaphore and its vision,
+- `faq/index.html` – Frequently asked questions and support hub for Criaphore apps,
 
 ### 🔹 Orbora App
 
 - `orbora/index.html` – Landing page for Orbora (Generative audio wellness agentic app),
+- `orbora/faq/index.html` – Frequently Asked Questions (subscriptions, cancellations, store refunds, RevenueCat, credits, device sync),
 - `orbora/privacy/index.html` – Privacy policy,
 - `orbora/terms/index.html` – Terms & Conditions,
 
