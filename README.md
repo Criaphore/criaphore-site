@@ -26,7 +26,6 @@ It is designed to be simple, clean, and user-friendly, providing visitors with e
 ### 🔹 Main Site
 
 - `index.html` – Landing page introducing Criaphore and its vision,
-- `faq/index.html` – Frequently asked questions and support hub for Criaphore apps,
 
 ### 🔹 Orbora App
 

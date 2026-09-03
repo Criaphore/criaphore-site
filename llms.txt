@@ -12,7 +12,6 @@ Criaphore is SaaS company creating applications in service of people powered by 
 ## Optional
 
 - [Website](https://criaphore.com/)
-- [FAQ](https://criaphore.com/faq/)
 - [Orbora FAQ](https://criaphore.com/orbora/faq/)
 - [Support](mailto:contact@criaphore.com)
 - [Orbora Privacy Policy](https://criaphore.com/orbora/privacy/)
