@@ -27,15 +27,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
-    // Smart Back Navigation: return directly to exact previous position without jump/animation reset
-    const backLinks = document.querySelectorAll('a.brand[title*="Back"], .navbar-links a[href*="Back"]');
-    backLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            if (window.history.length > 1 && document.referrer && document.referrer.includes(window.location.host)) {
-                e.preventDefault();
-                window.history.back();
-            }
-        });
-    });
 });

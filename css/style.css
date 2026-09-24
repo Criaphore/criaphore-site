@@ -39,6 +39,16 @@ body {
     line-height: 1.6;
 }
 
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-main);
+}
+
 /* Background Gradients */
 .background-glow {
     position: fixed;
@@ -539,6 +549,80 @@ footer {
     margin-bottom: 0;
 }
 
+.legal-section a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.legal-section a:hover {
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.legal-section .footer-link {
+    margin: 0;
+}
+
+/* Language Tabs */
+.language-tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--bg-card-border);
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-muted);
+    border: 1px solid var(--bg-card-border);
+    border-radius: 50px;
+    padding: 8px 22px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    font-family: var(--font-main);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    outline: none;
+}
+
+.tab-btn:hover {
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.tab-btn.active {
+    background: rgba(85, 174, 183, 0.15);
+    color: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 0 15px var(--primary-glow);
+    font-weight: 600;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+    animation: fadeInTab 0.3s ease-out;
+}
+
+@keyframes fadeInTab {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .legal-highlight-box {
     background: rgba(85, 174, 183, 0.08);
     border-left: 3px solid var(--primary);
@@ -665,6 +749,11 @@ footer {
     color: var(--primary);
     margin: 0 10px;
     text-decoration: none;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--text-main);
 }
 
 /* App & Form Utilities */
