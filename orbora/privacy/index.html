@@ -52,7 +52,7 @@
                 <div class="legal-header">
                     <span class="legal-badge">Legal Documentation</span>
                     <h1 class="legal-title">Privacy Policy</h1>
-                    <p class="legal-date">Last updated: September 2026</p>
+                    <p class="legal-date">Last updated: 24 September 2026</p>
                 </div>
 
                 <div class="legal-section">
@@ -83,7 +83,7 @@
 
                     <h3>Account Data</h3>
                     <p>Legal basis: Performance of a contract (Article 6(1)(b) GDPR).</p>
-                    <p>To create and maintain your account, we process your email address, your display name and profile picture if you sign in with Google or Apple, a nickname you can set inside the app, a unique user identifier (User ID), and whether your email has been verified. We also save your playback and completion progress, including which curated sessions you have finished, and whether a path's reward was paid.</p>
+                    <p>To create and maintain your account, we process your email address, your display name and profile picture if you sign in with Google or Apple, a nickname you can set inside the app, a unique user identifier (User ID), whether your email has been verified, which curated sessions you have finished on the Wellness Journey, and which paths' rewards have been paid (stored with your account so your progress follows you to another device, and deleted with your account).</p>
                     <p>You can sign in using Google, Sign in with Apple, or email and password. Passwords are handled entirely by Google Firebase Authentication and stored only in hashed form; we never see or store your raw password. Account-related service emails (such as email verification and password reset links) are sent from the criaphore.com domain through Firebase.</p>
 
                     <h3>Session Choices</h3>
@@ -111,18 +111,22 @@
                     <h3>App Integrity and Anti-Fraud</h3>
                     <p>Legal basis: Legitimate interest (Article 6(1)(f) GDPR), namely protecting our service, infrastructure, and user credits from abuse, reverse engineering, and automated fraud.</p>
                     <p>We use Firebase App Check, leveraging Google Play Integrity on Android and Apple App Attest on iOS, to verify that network requests come from genuine copies of our app installed on real, unmodified devices.</p>
-                    <p>If you claim a free welcome credit, a one-way cryptographic SHA-256 hash of your normalised email address is retained, even if you delete your account later. This prevents the same email address from claiming free promotional credits repeatedly. Because this hash is one-way, it cannot be reversed to reveal your email address.</p>
+                    <p>If you claim a free welcome credit or a Wellness Journey path reward, a one-way cryptographic SHA-256 hash of your normalised email address is retained, even if you delete your account later. This prevents the same email address from claiming free promotional credits repeatedly. Because this hash is one-way, it cannot be reversed to reveal your email address.</p>
 
                     <h3>Server Logs</h3>
                     <p>Legal basis: Legitimate interest (Article 6(1)(f) GDPR), specifically maintaining infrastructure security, monitoring system health, and troubleshooting errors.</p>
                     <p>Google Cloud automatically logs technical requests, including your IP address, your unique user ID, and the session parameters requested. These server logs are automatically deleted after 30 days.</p>
+
+                    <h3>Crash Reports</h3>
+                    <p>Legal basis: Legitimate interest (Article 6(1)(f) GDPR), specifically keeping the app stable and fixing errors.</p>
+                    <p>When the app crashes, Google Firebase Crashlytics collects the crash trace, device model, operating system and app version, and a random installation identifier created by Crashlytics. It is not linked to the user's account, name or email, and is never used for advertising or tracking. Crash reports are kept for 90 days.</p>
 
                     <h3>Customer Support</h3>
                     <p>Legal basis: Legitimate interest (Article 6(1)(f) GDPR), to respond to and resolve your questions or technical issues.</p>
                     <p>If you email us at <a href="mailto:contact@criaphore.com" class="footer-link">contact@criaphore.com</a>, we keep your email address, message, and our correspondence for as long as needed to handle your inquiry. Our email hosting service is provided by Zoho.</p>
 
                     <h3>Data Stored Only on Your Device</h3>
-                    <p>To respect your privacy and minimize server data, the following items are stored exclusively on your device and are never sent to our servers: your downloaded audio files, the local cache of your library, and your local app preferences. Orbora explicitly configures this local data to be excluded from operating system cloud backups.</p>
+                    <p>To respect your privacy and minimize server data, the following items are stored exclusively on your device and are never sent to our servers: your audio playback positions (note that finished curated sessions on the Wellness Journey are stored with your account, not device-only), your downloaded audio files, the local cache of your library, and your local app preferences. Orbora explicitly configures this local data to be excluded from operating system cloud backups.</p>
                 </div>
 
                 <div class="legal-section">
@@ -130,7 +134,7 @@
                     <p>We believe in keeping digital spaces calm and respectful. Here is what we do not do:</p>
                     <ul>
                         <li>No advertising: We do not display ads and do not include advertising SDKs in the app.</li>
-                        <li>No tracking: We do not use third-party analytics or behavioral tracking SDKs. We do not track you across other apps or websites, which is why Orbora does not display an Apple App Tracking Transparency (ATT) prompt.</li>
+                        <li>No tracking: We use no advertising, analytics or behavioural tracking SDKs; the only diagnostic tool is crash reporting (Firebase Crashlytics), which does not track users across apps or websites, which is why Orbora does not display an Apple App Tracking Transparency (ATT) prompt.</li>
                         <li>No data sales: We never sell, rent, or share your personal data with data brokers or commercial third parties, including under California CCPA/CPRA definitions.</li>
                         <li>No significant automated decisions: We do not use automated decision-making or profiling that produces legal or similarly significant effects. Our AI systems only write and voice the specific audio track you explicitly ask for.</li>
                         <li>No intrusive device permissions: We do not request access to your device location, contacts, photo library, microphone, camera, health sensors, or biometrics.</li>
@@ -141,7 +145,7 @@
                     <h2>5. Service Providers (Processors)</h2>
                     <p>We work with trusted service providers to operate Orbora. These processors handle data strictly under our instructions and data processing agreements:</p>
                     <ul>
-                        <li>Google LLC / Google Cloud and Firebase: Provides user authentication, device integrity checks (Firebase App Check), cloud servers (Cloud Run), database infrastructure (Cloud Firestore), file storage (Cloud Storage), system logging, script generation via Vertex AI Gemini, and voice synthesis via Gemini text-to-speech. Processing takes place in the United States (Iowa, us-central1). Under Google Cloud enterprise terms, customer data is not used to train Google machine learning models.</li>
+                        <li>Google LLC / Google Cloud and Firebase: Provides user authentication, device integrity checks (Firebase App Check), crash reporting (Firebase Crashlytics), cloud servers (Cloud Run), database infrastructure (Cloud Firestore), file storage (Cloud Storage), system logging, script generation via Vertex AI Gemini, and voice synthesis via Gemini text-to-speech. Processing takes place in the United States (Iowa, us-central1). Under Google Cloud enterprise terms, customer data is not used to train Google machine learning models.</li>
                         <li>RevenueCat, Inc. (United States): Manages in-app subscriptions, credit balances, and purchase validation.</li>
                         <li>Apple Inc. and Google LLC: Operate the app store platforms and process your subscription and credit payments under their own privacy policies.</li>
                         <li>Zoho Corporation: Hosts our business email service for customer support.</li>
@@ -160,8 +164,9 @@
                         <li>Account data, generated sessions, audio files, favourites, and credit balances are kept for as long as your account remains active, or until you choose to delete them.</li>
                         <li>Deleting an individual session immediately removes its script and audio file from our active servers.</li>
                         <li>Server logs are automatically purged after 30 days.</li>
-                        <li>The cryptographic email hash used for welcome credit fraud prevention is kept indefinitely solely to prevent promotional abuse.</li>
-                        <li>Residual backup copies of deleted files are permanently purged from backup systems within 7 days.</li>
+                        <li>Crash reports collected by Firebase Crashlytics are kept for 90 days.</li>
+                        <li>The cryptographic email hash used for welcome credit or Wellness Journey path reward fraud prevention is kept indefinitely solely to prevent promotional abuse.</li>
+                        <li>Deleted data, including account data and files, may remain in backups for up to 7 days before it is permanently erased.</li>
                         <li>Apple and Google maintain their own purchase and transaction records in accordance with their terms and tax regulations. For accounting compliance under French law, we retain statutory billing records (sales totals and transaction reference numbers, excluding any listening data) for 10 years.</li>
                     </ul>
                 </div>
@@ -186,7 +191,7 @@
                     <h3>Important Note Regarding Subscriptions</h3>
                     <p>Deleting your Orbora account does not automatically cancel an active recurring subscription. Subscriptions are billed by Apple or Google and must be cancelled directly in your Apple App Store or Google Play account settings. The app displays an explicit reminder about this before you confirm account deletion.</p>
 
-                    <p>After your account is deleted, the only records retained are the hashed email (if you received a welcome credit), temporary server logs until they expire after 30 days, and the mandatory French statutory accounting records noted above.</p>
+                    <p>After your account is deleted, the only records retained are the hashed email (if you received a welcome credit or a Wellness Journey path reward), temporary server logs until they expire after 30 days, and the mandatory French statutory accounting records noted above.</p>
                 </div>
 
                 <div class="legal-section">
@@ -230,7 +235,7 @@
                     <ul>
                         <li>Identifiers: Name, nickname, email address, unique online identifier (User ID), and IP address. Collected directly from you, from your sign-in provider (Google or Apple), and from your device interactions.</li>
                         <li>Commercial information: Records of subscriptions, credit balances, and purchase history. Collected via RevenueCat and your app store.</li>
-                        <li>Internet or other electronic network activity: Server logs, session generation choices, and device integrity verification tokens. Collected automatically from your device.</li>
+                        <li>Internet or other electronic network activity: Server logs, crash reports (Crashlytics), session generation choices, and device integrity verification tokens. Collected automatically from your device.</li>
                         <li>Inferences and personal characteristics: Non-sensitive preferences regarding your momentary mood or thematic choices selected from fixed lists to generate custom audio.</li>
                     </ul>
                     <p>We collect these categories solely for the business purposes of delivering, securing, maintaining, and improving our audio generation services, managing your purchases, and complying with statutory obligations.</p>
@@ -280,7 +285,7 @@
                 <div class="legal-header">
                     <span class="legal-badge">Documentation juridique</span>
                     <h1 class="legal-title">Politique de confidentialité</h1>
-                    <p class="legal-date">Dernière mise à jour : septembre 2026</p>
+                    <p class="legal-date">Dernière mise à jour : 24 septembre 2026</p>
                 </div>
 
                 <div class="legal-section">
@@ -311,7 +316,7 @@
 
                     <h3>Données de compte</h3>
                     <p>Base juridique : Exécution d'un contrat (article 6(1)(b) du RGPD).</p>
-                    <p>Pour créer et administrer votre compte, nous traitons votre adresse e-mail, votre nom d'affichage et votre photo de profil si vous choisissez la connexion via Google ou Apple, un pseudonyme personnalisable, un identifiant unique (User ID) et l'état de vérification de votre e-mail. Nous enregistrons également votre progression d'écoute, notamment les séances préenregistrées que vous avez terminées et si la récompense d'un parcours a été attribuée.</p>
+                    <p>Pour créer et administrer votre compte, nous traitons votre adresse e-mail, votre nom d'affichage et votre photo de profil si vous choisissez la connexion via Google ou Apple, un pseudonyme personnalisable, un identifiant unique (User ID), l'état de vérification de votre e-mail, les séances préenregistrées que vous avez terminées sur le Parcours bien-être et les récompenses de parcours qui ont été attribuées (enregistrées avec votre compte pour que votre progression vous suive sur un autre appareil, et supprimées avec le compte).</p>
                     <p>Vous pouvez vous connecter via Google, Connexion avec Apple ou avec un e-mail et un mot de passe. Les mots de passe sont pris en charge directement par Google Firebase Authentication et conservés sous forme hachée uniquement ; nous n'avons jamais connaissance de votre mot de passe en clair. Les courriels transactionnels liés à votre compte (vérification d'adresse, réinitialisation de mot de passe) sont expédiés depuis le domaine criaphore.com par l'intermédiaire de Firebase.</p>
 
                     <h3>Choix de séance</h3>
@@ -339,18 +344,22 @@
                     <h3>Intégrité de l'application et lutte anti-fraude</h3>
                     <p>Base juridique : Intérêt légitime (article 6(1)(f) du RGPD), consistant à protéger nos services, nos infrastructures et les crédits payés contre les abus et les tentatives de fraude automatisée.</p>
                     <p>Nous utilisons Firebase App Check (associé à Google Play Integrity sur Android et à Apple App Attest sur iOS) pour nous assurer que les requêtes proviennent d'une version authentique de notre application installée sur un appareil réel et non altéré.</p>
-                    <p>Si un crédit de bienvenue gratuit vous a été octroyé, une empreinte cryptographique unidirectionnelle SHA-256 de votre adresse e-mail normalisée est conservée, y compris après la suppression de votre compte, uniquement pour empêcher qu'une même adresse ne réclame plusieurs fois ce crédit gratuit. Cette empreinte ne peut en aucun cas être inversée pour retrouver votre adresse e-mail.</p>
+                    <p>Si un crédit de bienvenue gratuit ou une récompense de parcours du Parcours bien-être vous a été octroyé, une empreinte cryptographique unidirectionnelle SHA-256 de votre adresse e-mail normalisée est conservée, y compris après la suppression de votre compte, uniquement pour empêcher qu'une même adresse ne réclame plusieurs fois ces avantages promotionnels. Cette empreinte ne peut en aucun cas être inversée pour retrouver votre adresse e-mail.</p>
 
                     <h3>Journaux de serveurs (logs)</h3>
                     <p>Base juridique : Intérêt légitime (article 6(1)(f) du RGPD), pour assurer la sécurité de l'infrastructure, superviser les performances et diagnostiquer d'éventuels dysfonctionnements.</p>
                     <p>Google Cloud enregistre les requêtes techniques adressées à nos serveurs, y compris votre adresse IP, votre identifiant utilisateur et les paramètres de séance demandés. Ces journaux sont automatiquement détruits après 30 jours.</p>
+
+                    <h3>Rapports de plantage (Crash reports)</h3>
+                    <p>Base juridique : Intérêt légitime (article 6(1)(f) du RGPD), consistant à maintenir la stabilité de l'application et à corriger les erreurs.</p>
+                    <p>En cas de plantage de l'application, Google Firebase Crashlytics recueille la trace d'erreur (crash trace), le modèle de l'appareil, le système d'exploitation et la version de l'application, ainsi qu'un identifiant d'installation aléatoire généré par Crashlytics. Ces données ne sont associées ni au compte, ni au nom, ni à l'adresse e-mail de l'utilisateur, et ne sont jamais utilisées à des fins publicitaires ou de traçage. Les rapports de plantage sont conservés pendant 90 jours.</p>
 
                     <h3>Support utilisateur</h3>
                     <p>Base juridique : Intérêt légitime (article 6(1)(f) du RGPD), afin de répondre à vos demandes et de résoudre vos incidents techniques.</p>
                     <p>Lorsque vous nous écrivez à <a href="mailto:contact@criaphore.com" class="footer-link">contact@criaphore.com</a>, nous conservons vos messages et nos réponses le temps nécessaire au traitement complet de votre demande. Notre messagerie électronique est hébergée par Zoho.</p>
 
                     <h3>Données conservées uniquement sur votre appareil</h3>
-                    <p>Afin de préserver votre vie privée et de limiter les données transmises à nos serveurs, les éléments suivants sont stockés exclusivement en local sur votre appareil : vos fichiers audio téléchargés, la copie locale de votre bibliothèque et vos réglages d'application. L'application configure expressément ces données pour qu'elles soient exclues des sauvegardes cloud du système d'exploitation.</p>
+                    <p>Afin de préserver votre vie privée et de limiter les données transmises à nos serveurs, les éléments suivants sont stockés exclusivement en local sur votre appareil et ne sont jamais envoyés à nos serveurs : vos positions de lecture audio (veuillez noter que les séances préenregistrées terminées sur le Parcours bien-être sont quant à elles enregistrées avec votre compte et ne sont plus limitées à l'appareil seul), vos fichiers audio téléchargés, la copie locale de votre bibliothèque et vos réglages d'application. L'application configure expressément ces données pour qu'elles soient exclues des sauvegardes cloud du système d'exploitation.</p>
                 </div>
 
                 <div class="legal-section">
@@ -358,7 +367,7 @@
                     <p>Nous avons conçu Orbora comme un environnement paisible et respectueux. Nous appliquons les principes stricts suivants :</p>
                     <ul>
                         <li>Aucune publicité : Nous n'affichons aucune annonce et n'intégrons aucun kit de développement (SDK) publicitaire.</li>
-                        <li>Aucun traçage : Nous n'utilisons aucun outil de traçage analytique ou comportemental tiers. Nous ne suivons pas votre activité au travers d'autres applications ou sites web, raison pour laquelle Orbora ne présente aucune invite App Tracking Transparency (ATT) sur iOS.</li>
+                        <li>Aucun traçage : Nous n'utilisons aucun SDK publicitaire, analytique ou de suivi comportemental ; le seul outil de diagnostic est le rapport de plantage (Firebase Crashlytics), qui ne suit pas les utilisateurs au travers d'autres applications ou sites web, raison pour laquelle Orbora ne présente aucune invite App Tracking Transparency (ATT) sur iOS.</li>
                         <li>Aucune vente de données : Nous ne vendons, ne louons et ne partageons jamais vos données personnelles avec des courtiers de données ou des tiers à des fins commerciales, y compris au sens du CCPA/CPRA californien.</li>
                         <li>Aucune décision automatisée produisant des effets juridiques : Nous n'effectuons aucun profilage ou décision automatisée ayant des conséquences juridiques ou similaires. L'IA génère uniquement la séance audio que vous avez expressément configurée.</li>
                         <li>Aucun accès à des capteurs intrusifs : Nous ne demandons aucun accès à votre localisation géographique, vos contacts, votre galerie de photos, votre micro, votre caméra, vos capteurs de santé ou vos données biométriques.</li>
@@ -369,7 +378,7 @@
                     <h2>5. Sous-traitants et prestataires de services</h2>
                     <p>Nous faisons appel à des prestataires de confiance pour assurer le bon fonctionnement d'Orbora, soumis à des accords stricts de protection des données :</p>
                     <ul>
-                        <li>Google LLC / Google Cloud et Firebase : Authentification des utilisateurs, vérification d'intégrité (App Check), hébergement de serveurs (Cloud Run), base de données (Cloud Firestore), stockage de fichiers (Cloud Storage), journaux techniques, génération des scripts par Vertex AI Gemini et synthèse vocale par Gemini text-to-speech. Ces services sont hébergés aux États-Unis (Iowa, us-central1). Conformément aux engagements contractuels professionnels de Google Cloud, les données des clients ne sont jamais utilisées pour entraîner les modèles de Google.</li>
+                        <li>Google LLC / Google Cloud et Firebase : Authentification des utilisateurs, vérification d'intégrité (App Check), rapports de plantage (Firebase Crashlytics), hébergement de serveurs (Cloud Run), base de données (Cloud Firestore), stockage de fichiers (Cloud Storage), journaux techniques, génération des scripts par Vertex AI Gemini et synthèse vocale par Gemini text-to-speech. Ces services sont hébergés aux États-Unis (Iowa, us-central1). Conformément aux engagements contractuels professionnels de Google Cloud, les données des clients ne sont jamais utilisées pour entraîner les modèles de Google.</li>
                         <li>RevenueCat, Inc. (États-Unis) : Gestion des abonnements dans l'application, validation des achats et suivi des crédits.</li>
                         <li>Apple Inc. et Google LLC : Plateformes de distribution d'applications et gestion des paiements, intervenant selon leurs propres politiques de confidentialité.</li>
                         <li>Zoho Corporation : Hébergement de la boîte de messagerie électronique utilisée pour notre support client.</li>
@@ -388,8 +397,9 @@
                         <li>Données de compte, séances générées, fichiers audio, favoris et solde de crédits : conservés tant que votre compte reste actif ou jusqu'à ce que vous décidiez de les supprimer.</li>
                         <li>La suppression d'une séance retire immédiatement son script et son fichier audio de nos serveurs en production.</li>
                         <li>Les journaux de requêtes serveur sont automatiquement effacés au bout de 30 jours.</li>
-                        <li>L'empreinte cryptographique de l'adresse e-mail pour le crédit de bienvenue est conservée indéfiniment pour la prévention des abus.</li>
-                        <li>Les fichiers supprimés peuvent subsister dans nos sauvegardes de stockage pour un délai maximal de 7 jours avant d'être définitivement purgés.</li>
+                        <li>Les rapports de plantage collectés par Firebase Crashlytics sont conservés pendant 90 jours.</li>
+                        <li>L'empreinte cryptographique de l'adresse e-mail pour le crédit de bienvenue ou les récompenses de parcours du Parcours bien-être est conservée indéfiniment pour la prévention des abus promotionnels.</li>
+                        <li>Les données supprimées, y compris les données de compte et les fichiers, peuvent subsister dans les sauvegardes jusqu'à 7 jours avant d'être définitivement effacées.</li>
                         <li>Apple et Google conservent leurs propres registres d'achats conformément à leurs conditions et aux règles fiscales. Pour respecter nos obligations comptables en vertu du droit français, nous conservons les récapitulatifs de facturation (montants totaux et identifiants de transaction, à l'exclusion de tout historique d'écoute) pendant 10 ans.</li>
                     </ul>
                 </div>
@@ -414,7 +424,7 @@
                     <h3>Avertissement important concernant les abonnements</h3>
                     <p>La suppression de votre compte Orbora n'annule pas automatiquement votre abonnement souscrit auprès d'Apple ou de Google. Vous devez obligatoirement résilier votre abonnement dans les paramètres de votre compte App Store ou Google Play. Une alerte de rappel s'affiche dans l'application avant toute confirmation de suppression.</p>
 
-                    <p>Après la suppression, les seules données résiduelles sont l'empreinte de votre e-mail (si un crédit de bienvenue a été accordé), les journaux techniques jusqu'à leur expiration sous 30 jours, et les archives comptables requises par la législation française.</p>
+                    <p>Après la suppression, les seules données résiduelles sont l'empreinte de votre e-mail (si vous avez bénéficié d'un crédit de bienvenue ou d'une récompense de parcours du Parcours bien-être), les journaux techniques jusqu'à leur expiration sous 30 jours, et les archives comptables requises par la législation française.</p>
                 </div>
 
                 <div class="legal-section">
@@ -458,7 +468,7 @@
                     <ul>
                         <li>Identifiants : Nom, pseudonyme, e-mail, identifiant en ligne (User ID) et adresse IP. Recueillis directement auprès de vous, de votre fournisseur d'authentification (Google ou Apple) et de votre appareil.</li>
                         <li>Informations commerciales : Historique des achats, abonnements et soldes de crédits. Recueillis via RevenueCat et les magasins d'applications.</li>
-                        <li>Activité sur Internet ou sur réseau électronique : Journaux de requêtes, choix de génération et jetons de vérification d'appareil. Recueillis automatiquement par nos serveurs.</li>
+                        <li>Activité sur Internet ou sur réseau électronique : Journaux de requêtes, rapports de plantage (Crashlytics), choix de génération et jetons de vérification d'appareil. Recueillis automatiquement par nos serveurs.</li>
                         <li>Inférences et préférences : Préférences non sensibles liées à votre état d'esprit passager et thématiques sélectionnées dans nos listes d'options pour créer votre séance.</li>
                     </ul>
                     <p>Ces données sont traitées uniquement pour les finalités professionnelles d'exécution du service, de sécurité, de gestion des transactions et de conformité comptable.</p>
@@ -508,7 +518,7 @@
                 <div class="legal-header">
                     <span class="legal-badge">Documentación legal</span>
                     <h1 class="legal-title">Política de privacidad</h1>
-                    <p class="legal-date">Última actualización: septiembre de 2026</p>
+                    <p class="legal-date">Última actualización: 24 de septiembre de 2026</p>
                 </div>
 
                 <div class="legal-section">
@@ -539,7 +549,7 @@
 
                     <h3>Datos de la cuenta</h3>
                     <p>Base jurídica: Ejecución de un contrato (artículo 6(1)(b) del RGPD).</p>
-                    <p>Para crear y gestionar su cuenta, tratamos su dirección de correo electrónico, su nombre público y fotografía de perfil en caso de acceder mediante Google o Apple, un seudónimo opcional configurado en la aplicación, un identificador de usuario exclusivo (User ID) y la confirmación de verificación de su correo. También guardamos su progreso de reproducción, incluyendo qué sesiones seleccionadas ha completado y si se ha otorgado la recompensa de un recorrido.</p>
+                    <p>Para crear y gestionar su cuenta, tratamos su dirección de correo electrónico, su nombre público y fotografía de perfil en caso de acceder mediante Google o Apple, un seudónimo opcional configurado en la aplicación, un identificador de usuario exclusivo (User ID), la confirmación de verificación de su correo, qué sesiones seleccionadas ha completado en el Recorrido de bienestar y qué recompensas de recorrido han sido otorgadas (almacenadas con su cuenta para que su progreso le acompañe en otro dispositivo, y eliminadas junto con la cuenta).</p>
                     <p>Puede iniciar sesión a través de Google, Iniciar sesión con Apple o mediante correo electrónico y contraseña. Las contraseñas son administradas íntegramente por Google Firebase Authentication y se guardan exclusivamente en formato cifrado mediante hash; nunca tenemos acceso a su contraseña real. Los mensajes automáticos del sistema (como la verificación de correo y la recuperación de contraseña) se envían desde el dominio criaphore.com a través de Firebase.</p>
 
                     <h3>Preferencias y elecciones de sesión</h3>
@@ -567,18 +577,22 @@
                     <h3>Integridad de la aplicación y prevención de fraudes</h3>
                     <p>Base jurídica: Interés legítimo (artículo 6(1)(f) del RGPD), orientado a proteger el servicio, nuestros sistemas y los créditos adquiridos frente al fraude y el abuso informático.</p>
                     <p>Utilizamos Firebase App Check (junto a Google Play Integrity en Android y Apple App Attest en iOS) con el fin de certificar que las peticiones se originan en copias oficiales de nuestra aplicación instaladas en dispositivos genuinos no adulterados.</p>
-                    <p>En caso de concederse un crédito de bienvenida gratuito, se conserva una huella criptográfica unidireccional SHA-256 de su dirección de correo electrónico normalizada, incluso tras eliminar la cuenta, únicamente para evitar que una misma dirección reclame dicha promoción más de una vez. Al ser una función unidireccional, es matemáticamente imposible recuperar su dirección de correo a partir de dicho hash.</p>
+                    <p>En caso de concederse un crédito de bienvenida gratuito o una recompensa de recorrido del Recorrido de bienestar, se conserva una huella criptográfica unidireccional SHA-256 de su dirección de correo electrónico normalizada, incluso tras eliminar la cuenta, únicamente para evitar que una misma dirección reclame dichas promociones más de una vez. Al ser una función unidireccional, es matemáticamente imposible recuperar su dirección de correo a partir de dicho hash.</p>
 
                     <h3>Registros de servidores (logs)</h3>
                     <p>Base jurídica: Interés legítimo (artículo 6(1)(f) del RGPD), orientado a velar por la seguridad técnica, auditar el rendimiento y resolver fallos del sistema.</p>
                     <p>Google Cloud registra las solicitudes técnicas recibidas, incluyendo la dirección IP, el identificador de usuario y los parámetros de sesión configurados. Estos registros de servidores se eliminan de manera automática pasados 30 días.</p>
+
+                    <h3>Informes de fallos (Crash reports)</h3>
+                    <p>Base jurídica: Interés legítimo (artículo 6(1)(f) del RGPD), orientado a mantener la estabilidad de la aplicación y subsanar errores técnicos.</p>
+                    <p>Si la aplicación se cierra inesperadamente por un fallo, Google Firebase Crashlytics recopila la traza del error (crash trace), el modelo del dispositivo, el sistema operativo, la versión de la aplicación y un identificador de instalación aleatorio generado por Crashlytics. Esta información no está vinculada a la cuenta, nombre ni correo del usuario, y nunca se utiliza para publicidad ni rastreo. Los informes de fallos se conservan durante 90 días.</p>
 
                     <h3>Atención al usuario</h3>
                     <p>Base jurídica: Interés legítimo (artículo 6(1)(f) del RGPD), para responder a sus consultas y dar soporte técnico.</p>
                     <p>Si nos escribe a <a href="mailto:contact@criaphore.com" class="footer-link">contact@criaphore.com</a>, conservamos los mensajes y las respuestas durante el tiempo requerido para atender y resolver su caso. Nuestro proveedor de correo corporativo es Zoho.</p>
 
                     <h3>Datos almacenados exclusivamente en su dispositivo</h3>
-                    <p>Para salvaguardar su privacidad y limitar la información enviada a los servidores, los siguientes datos se conservan únicamente en la memoria local de su dispositivo y nunca se transmiten a nuestros servidores: los archivos de audio descargados, la copia local de su biblioteca y sus preferencias locales de la interfaz. Orbora configura expresamente estos datos locales para que queden excluidos de las copias de seguridad en la nube del sistema operativo.</p>
+                    <p>Para salvaguardar su privacidad y limitar la información enviada a los servidores, los siguientes datos se conservan únicamente en la memoria local de su dispositivo y nunca se transmiten a nuestros servidores: sus posiciones de reproducción de audio (tenga en cuenta que las sesiones seleccionadas completadas en el Recorrido de bienestar se almacenan con su cuenta y ya no son exclusivas del dispositivo), los archivos de audio descargados, la copia local de su biblioteca y sus preferencias locales de la interfaz. Orbora configura expresamente estos datos locales para que queden excluidos de las copias de seguridad en la nube del sistema operativo.</p>
                 </div>
 
                 <div class="legal-section">
@@ -586,7 +600,7 @@
                     <p>Orbora ha sido diseñada como un espacio digital de tranquilidad y respeto. Nuestras normas de desarrollo garantizan que:</p>
                     <ul>
                         <li>No mostramos publicidad: No incluimos anuncios ni herramientas de desarrollo (SDK) de publicidad.</li>
-                        <li>No realizamos rastreo: No utilizamos herramientas de analítica conductual ni rastreo entre aplicaciones o sitios web de terceros, motivo por el cual Orbora no muestra ninguna solicitud de App Tracking Transparency (ATT) en iOS.</li>
+                        <li>No realizamos rastreo: No utilizamos ningún SDK publicitario, de analítica o de seguimiento conductual; la única herramienta de diagnóstico son los informes de fallos (Firebase Crashlytics), que no rastrean a los usuarios entre aplicaciones o sitios web, motivo por el cual Orbora no muestra ninguna solicitud de App Tracking Transparency (ATT) en iOS.</li>
                         <li>No vendemos datos: Jamás vendemos, alquilamos ni compartimos sus datos personales con intermediarios de datos ni empresas comerciales, inclusive conforme a las definiciones de las leyes CCPA/CPRA de California.</li>
                         <li>No tomamos decisiones automatizadas de efecto jurídico: No aplicamos elaboración de perfiles ni procesos automatizados que generen efectos legales o de trascendencia similar. La IA se limita a escribir y narrar la sesión específica que usted ha solicitado.</li>
                         <li>No accedemos a sensores invasivos del dispositivo: No requerimos permisos para acceder a su ubicación geográfica, lista de contactos, galería fotográfica, micrófono, cámara, sensores de salud ni parámetros biométricos.</li>
@@ -597,7 +611,7 @@
                     <h2>5. Proveedores de servicios (Encargados del tratamiento)</h2>
                     <p>Trabajamos con proveedores tecnológicos de confianza para operar el servicio, sujetos a estrictos contratos de tratamiento de datos:</p>
                     <ul>
-                        <li>Google LLC / Google Cloud y Firebase: Autenticación de usuarios, comprobación de integridad (Firebase App Check), alojamiento en servidores (Cloud Run), base de datos (Cloud Firestore), almacenamiento de archivos (Cloud Storage), registros del sistema, generación de textos con Vertex AI Gemini y síntesis de voz mediante Gemini text-to-speech. La infraestructura se localiza en los Estados Unidos (Iowa, us-central1). Conforme a los términos profesionales de Google Cloud, los datos de los clientes nunca se utilizan para entrenar los modelos de inteligencia artificial de Google.</li>
+                        <li>Google LLC / Google Cloud y Firebase: Autenticación de usuarios, comprobación de integridad (Firebase App Check), informes de fallos (Firebase Crashlytics), alojamiento en servidores (Cloud Run), base de datos (Cloud Firestore), almacenamiento de archivos (Cloud Storage), registros del sistema, generación de textos con Vertex AI Gemini y síntesis de voz mediante Gemini text-to-speech. La infraestructura se localiza en los Estados Unidos (Iowa, us-central1). Conforme a los términos profesionales de Google Cloud, los datos de los clientes nunca se utilizan para entrenar los modelos de inteligencia artificial de Google.</li>
                         <li>RevenueCat, Inc. (Estados Unidos): Control de suscripciones dentro de la aplicación, saldo de créditos y validación de compras.</li>
                         <li>Apple Inc. y Google LLC: Tiendas oficiales de aplicaciones y gestores de cobro, actuando bajo sus propias políticas de privacidad.</li>
                         <li>Zoho Corporation: Servicio de alojamiento del correo electrónico corporativo utilizado para nuestra atención al cliente.</li>
@@ -616,8 +630,9 @@
                         <li>Los datos de su cuenta, sesiones generadas, audios, elementos favoritos y saldo de créditos se conservan mientras mantenga activa su cuenta o hasta que decida eliminarlos.</li>
                         <li>La eliminación de una sesión individual borra de inmediato su guion y su pista de audio de nuestros servidores de producción.</li>
                         <li>Los registros de servidores se purgan automáticamente transcurridos 30 días.</li>
-                        <li>La huella criptográfica del correo para créditos de bienvenida se conserva indefinidamente de forma exclusiva para evitar abusos promocionales.</li>
-                        <li>Los archivos eliminados pueden permanecer en copias de seguridad de almacenamiento durante un máximo de 7 días antes de su supresión definitiva.</li>
+                        <li>Los informes de fallos recopilados por Firebase Crashlytics se conservan durante 90 días.</li>
+                        <li>La huella criptográfica del correo para créditos de bienvenida o recompensas de recorrido del Recorrido de bienestar se conserva indefinidamente de forma exclusiva para evitar abusos promocionales.</li>
+                        <li>Los datos eliminados, incluidos los datos de la cuenta y los archivos, pueden permanecer en copias de seguridad durante un máximo de 7 días antes de su eliminación permanente.</li>
                         <li>Apple y Google custodian sus propios comprobantes de compra conforme a sus políticas y obligaciones fiscales. Para dar cumplimiento a las leyes contables de Francia, conservamos los justificantes fiscales (importes totales y códigos de transacción, sin historiales de escucha) durante 10 años.</li>
                     </ul>
                 </div>
@@ -642,7 +657,7 @@
                     <h3>Aviso importante sobre suscripciones</h3>
                     <p>Eliminar su cuenta de Orbora no cancela de forma automática una suscripción activa facturada por Apple o Google. Debe cancelar su suscripción directamente en los ajustes de su cuenta de App Store o Google Play. La propia aplicación muestra una advertencia al respecto antes de confirmar la eliminación de la cuenta.</p>
 
-                    <p>Tras la eliminación, los únicos datos que se retienen son la huella criptográfica del correo (si se disfrutó del crédito de bienvenida), los registros técnicos de servidores hasta que expiren a los 30 días y los archivos contables exigidos por la legislación de Francia.</p>
+                    <p>Tras la eliminación, los únicos datos que se retienen son la huella criptográfica del correo (si recibió un crédito de bienvenida o una recompensa de recorrido del Recorrido de bienestar), los registros técnicos de servidores hasta que expiren a los 30 días y los archivos contables exigidos por la legislación de Francia.</p>
                 </div>
 
                 <div class="legal-section">
@@ -686,7 +701,7 @@
                     <ul>
                         <li>Identificadores: Nombre, seudónimo, correo electrónico, identificador en línea (User ID) y dirección IP. Obtenidos directamente de usted, de su proveedor de inicio de sesión (Google o Apple) y de su dispositivo.</li>
                         <li>Información comercial: Registros de suscripciones, saldos de créditos e historial de compras. Obtenidos a través de RevenueCat y las tiendas de aplicaciones.</li>
-                        <li>Actividad en redes o Internet: Registros de solicitudes del servidor, opciones de generación de audio y códigos de comprobación de integridad del dispositivo. Obtenidos de forma técnica y automática.</li>
+                        <li>Actividad en redes o Internet: Registros de solicitudes del servidor, informes de fallos (Crashlytics), opciones de generación de audio y códigos de comprobación de integridad del dispositivo. Obtenidos de forma técnica y automática.</li>
                         <li>Inferencias y características personales: Preferencias no sensibles de ánimo momentáneo y enfoques temáticos elegidos en menús cerrados para personalizar su audio.</li>
                     </ul>
                     <p>Recopilamos estas categorías exclusivamente con los fines comerciales de prestar el servicio, garantizar su seguridad, gestionar las transacciones y satisfacer las exigencias contables.</p>
