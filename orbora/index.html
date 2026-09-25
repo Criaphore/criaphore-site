@@ -47,6 +47,7 @@
     <div class="navbar-links">
       <a href="#features">Features</a>
       <a href="#credits">Credits</a>
+      <a href="#tech">Tech</a>
       <a href="faq/">FAQ</a>
     </div>
   </nav>
@@ -206,6 +207,97 @@
       </div>
       <p class="orb-disclaimer">Orbora is for relaxation and general wellbeing. It is not a medical device and does not
         replace professional care.</p>
+    </section>
+
+    <!-- Under the hood -->
+    <section class="orb-section" id="tech">
+      <h2 class="section-title scroll-hidden">Under the hood</h2>
+      <p class="orb-section-lead scroll-hidden">Gemini writes your session, Gemini gives it a voice, and a small server on
+        Google Cloud keeps it safe and fair. Here is what happens after you tap Create.</p>
+
+      <ol class="orb-pipeline">
+        <li class="orb-pipe-step glass scroll-hidden">
+          <div>
+            <h3>Your choices leave the phone</h3>
+            <p>Only the options you picked travel: subject, voice, length, tone, how you feel, where you are. Never a
+              line of free text.</p>
+          </div>
+          <span class="orb-where phone">Phone</span>
+        </li>
+        <li class="orb-pipe-step glass scroll-hidden">
+          <div>
+            <h3>The server checks and reserves</h3>
+            <p>It verifies your sign-in and that the request comes from the real app, then sets the credits aside
+              before any AI runs.</p>
+          </div>
+          <span class="orb-where cloud">Google Cloud</span>
+        </li>
+        <li class="orb-pipe-step glass scroll-hidden">
+          <div>
+            <h3>The script is written</h3>
+            <p><strong>Gemini 2.5 Flash</strong> writes the spoken words, with voice cues like <code>[whispers]</code>,
+              <code>[slow]</code> and <code>[long pause]</code>, paced to fill exactly the length you chose.</p>
+          </div>
+          <span class="orb-where gemini">Gemini</span>
+        </li>
+        <li class="orb-pipe-step glass scroll-hidden">
+          <div>
+            <h3>The script is voiced</h3>
+            <p><strong>Gemini 3.1 Flash TTS</strong> reads it in your chosen voice and follows the cues: it really
+              whispers, slows down and falls silent.</p>
+          </div>
+          <span class="orb-where gemini">Gemini</span>
+        </li>
+        <li class="orb-pipe-step glass scroll-hidden">
+          <div>
+            <h3>Saved to your library</h3>
+            <p>The audio goes into private Cloud Storage and your library in Firestore, so it follows you to any
+              device.</p>
+          </div>
+          <span class="orb-where cloud">Google Cloud</span>
+        </li>
+        <li class="orb-pipe-step glass scroll-hidden">
+          <div>
+            <h3>Downloaded for offline listening</h3>
+            <p>The app keeps a copy on your phone and plays it with the screen locked, no connection needed.</p>
+          </div>
+          <span class="orb-where phone">Phone</span>
+        </li>
+      </ol>
+
+      <div class="orb-tech-cards">
+        <div class="orb-tech-card glass scroll-hidden">
+          <span class="orb-eyebrow">Prompt design</span>
+          <h3>Built from choices, not text</h3>
+          <p>Every sentence Gemini reads is written in advance on the server. Your choices only select among them, so
+            nobody can slip their own instructions in.</p>
+          <p>Safety rules come first: if you are commuting or walking, the session never asks you to close your eyes,
+            and a sleep session never ends on a wake-up call.</p>
+        </div>
+        <div class="orb-tech-card glass scroll-hidden" style="transition-delay: 0.1s;">
+          <span class="orb-eyebrow">Fair credits</span>
+          <h3>Never pay for nothing</h3>
+          <p>Credits are taken before generation starts, so two taps at once can never overdraw your balance. If
+            anything fails along the way, they are given back automatically.</p>
+          <p>A retry after a lost connection returns the session already made, instead of charging a second
+            time.</p>
+        </div>
+        <div class="orb-tech-card glass scroll-hidden" style="transition-delay: 0.2s;">
+          <span class="orb-eyebrow">One codebase</span>
+          <h3>Kotlin, from phone to server</h3>
+          <p>The Android app, the iOS app and the server share one Kotlin Multiplatform codebase, including the exact
+            shape of every request between them.</p>
+          <p>The app works offline first: your library lives in a local database and syncs with the server when you
+            are back online.</p>
+        </div>
+      </div>
+
+      <div class="orb-stack scroll-hidden">
+        <span>Kotlin Multiplatform</span><span>Compose Multiplatform</span><span>Ktor</span><span>Koin</span>
+        <span>Room</span><span>Media3 / AVPlayer</span><span>Gemini 2.5 Flash</span><span>Gemini TTS</span>
+        <span>Vertex AI</span><span>Cloud Run</span><span>Cloud Storage</span><span>Firestore</span>
+        <span>Firebase Auth</span><span>Firebase App Check</span><span>RevenueCat</span>
+      </div>
     </section>
 
     <!-- Closing call to action -->
