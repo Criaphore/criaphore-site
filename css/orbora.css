@@ -493,8 +493,8 @@
     }
 }
 
-/* Store badges before the apps are live: greyed out and not clickable.
-   Remove "coming-soon" from the badge rows (and the pills) on launch day. */
+/* A store badge whose app isn't live yet: greyed out and not clickable.
+   Remove "coming-soon" from its link (and update the pills) on launch day. */
 .orb-coming-soon {
     display: inline-block;
     margin-bottom: 0.9rem;
@@ -508,12 +508,12 @@
     letter-spacing: 0.02em;
 }
 
-.orb-badges.coming-soon a {
+.orb-badges a.coming-soon {
     pointer-events: none;
     cursor: default;
 }
 
-.orb-badges.coming-soon .store-badge {
+.orb-badges a.coming-soon .store-badge {
     filter: grayscale(1);
     opacity: 0.45;
 }
