@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diagnosly | Personal Health Assistant</title>
-  <meta name="description" content="Diagnosly - Your personal AI healthcare assistant.">
+  <title>Diagnosly | AI Health Companion</title>
+  <meta name="description" content="Diagnosly is an AI health companion: a guided symptom check-up, AI chat, document summaries and a private health profile, with your data encrypted on your phone.">
   <link rel="canonical" href="https://criaphore.com/diagnosly/" />
   <meta name="theme-color" content="#0a0a0a">
 
@@ -19,9 +19,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/diagnosly.css">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Diagnosly" />
+  <meta property="og:title" content="Diagnosly | AI Health Companion" />
+  <meta property="og:description" content="A guided symptom check-up, AI chat, document summaries and a private health profile, with your data encrypted on your phone." />
+  <meta property="og:url" content="https://criaphore.com/diagnosly/" />
   <meta property="og:type" content="website" />
 </head>
 
@@ -38,56 +41,284 @@
     </a>
 
     <div class="navbar-links">
+      <a href="#how">How it works</a>
       <a href="#features">Features</a>
-      <a href="#aboutus">Purpose</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#tech">Tech</a>
     </div>
   </nav>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero" id="download">
+    <!-- Hero -->
+    <section class="hero dg-hero" id="download">
       <div class="hero-content">
         <h1 class="hero-title">Diagnosly</h1>
         <img src="../imgs/diagnosly/banner.png" alt="Diagnosly Banner" class="scroll-hidden banner-img">
-        <p class="tagline">An AI companion to understand symptoms and manage personal health.</p>
-
-
+        <span class="dg-status">Archived project · 2024 – 2025</span>
+        <p class="tagline">An AI health companion to make sense of your symptoms, your documents and your health
+          history.</p>
       </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="scroll-container" id="features">
-      <h2 class="section-title scroll-hidden">System Overview</h2>
+    <!-- Key numbers -->
+    <section class="dg-section" id="overview">
+      <p class="dg-section-lead scroll-hidden">Describe how you feel in a few taps, and Diagnosly's AI explains what might
+        be going on and what to do next, taking your health profile and medical documents into account.</p>
+      <div class="dg-stats">
+        <div class="dg-stat glass scroll-hidden"><strong>7</strong><span>steps to a check-up</span></div>
+        <div class="dg-stat glass scroll-hidden" style="transition-delay: 0.1s;"><strong>34</strong><span>body areas to point at</span></div>
+        <div class="dg-stat glass scroll-hidden" style="transition-delay: 0.2s;"><strong>25</strong><span>languages</span></div>
+        <div class="dg-stat glass scroll-hidden" style="transition-delay: 0.3s;"><strong>1</strong><span>shared codebase, Android and iOS</span></div>
+      </div>
+    </section>
 
-      <div class="features-grid">
-        <div class="feature-card scroll-hidden">
-          <img src="../imgs/diagnosly/doc.png" alt="24/7 Support">
-          <h3>24/7 Health Support</h3>
-          <p>Access medical information and preliminary assessments anytime, anywhere.</p>
+    <!-- How a check-up works -->
+    <section class="dg-section" id="how">
+      <h2 class="section-title scroll-hidden">How a check-up works</h2>
+      <p class="dg-section-lead scroll-hidden">Instead of a blank chat box, Diagnosly asks the questions a doctor would
+        ask, one at a time.</p>
+
+      <ol class="dg-steps">
+        <li class="dg-step glass scroll-hidden">
+          <h3>How do you feel?</h3>
+          <p>Start a new check-up whenever something feels off.</p>
+        </li>
+        <li class="dg-step glass scroll-hidden" style="transition-delay: 0.1s;">
+          <h3>Since when?</h3>
+          <p>How long you have been feeling this way.</p>
+        </li>
+        <li class="dg-step glass scroll-hidden" style="transition-delay: 0.2s;">
+          <h3>How much?</h3>
+          <p>Rate the discomfort or pain from 0 to 10.</p>
+        </li>
+        <li class="dg-step glass scroll-hidden" style="transition-delay: 0.3s;">
+          <h3>Where?</h3>
+          <p>Select the body areas where you feel it.</p>
+        </li>
+        <li class="dg-step glass scroll-hidden">
+          <h3>Describe it</h3>
+          <p>Your symptoms in your own words: the more detail, the better.</p>
+        </li>
+        <li class="dg-step glass scroll-hidden" style="transition-delay: 0.1s;">
+          <h3>Add documents</h3>
+          <p>Optionally attach test results or exams you already have.</p>
+        </li>
+        <li class="dg-step glass scroll-hidden" style="transition-delay: 0.2s;">
+          <h3>Check and send</h3>
+          <p>Review everything on one screen and edit anything before sending.</p>
+        </li>
+        <li class="dg-step dg-step-result glass scroll-hidden" style="transition-delay: 0.3s;">
+          <h3>Get your answer</h3>
+          <p>Possible explanations and next steps, then keep talking in a chat.</p>
+        </li>
+      </ol>
+
+      <div class="dg-pain glass scroll-hidden">
+        <h3>A pain scale you can feel</h3>
+        <p>Each level has its own face, so choosing a number feels natural.</p>
+        <div class="dg-pain-scale" role="img" aria-label="Pain scale from 0, grinning face, to 10, exploding head">
+          <span>😀<small>0</small></span><span>🙂<small>1</small></span><span>😐<small>2</small></span>
+          <span>😕<small>3</small></span><span>😟<small>4</small></span><span>🤕<small>5</small></span>
+          <span>😣<small>6</small></span><span>😫<small>7</small></span><span>😭<small>8</small></span>
+          <span>🥵<small>9</small></span><span>🤯<small>10</small></span>
         </div>
+        <div class="dg-pain-bar"></div>
+      </div>
+    </section>
 
-        <div class="feature-card scroll-hidden" style="transition-delay: 0.1s;">
-          <img src="../imgs/diagnosly/logo.png" alt="Smart Monitoring">
-          <h3>Smart Monitoring</h3>
-          <p>Track vital signs, medications, and symptoms with intelligent pattern recognition.</p>
+    <!-- Features -->
+    <section class="dg-section" id="features">
+      <h2 class="section-title scroll-hidden">Everything in Diagnosly</h2>
+      <p class="dg-section-lead scroll-hidden">A check-up, a conversation, your documents and your history, all in one
+        place.</p>
+
+      <div class="dg-features">
+        <div class="dg-feature glass scroll-hidden">
+          <span class="dg-eyebrow">AI chat</span>
+          <h3>Keep the conversation going</h3>
+          <p>Every check-up continues as a chat, so you can ask follow-up questions about the answer.</p>
+          <ul>
+            <li>Quick Chat for a fast question, no check-up needed</li>
+            <li>Attach document summaries to any conversation</li>
+            <li>Answers in the language of your choice</li>
+          </ul>
         </div>
-
-        <div class="feature-card scroll-hidden" style="transition-delay: 0.2s;">
-          <img src="../imgs/diagnosly/ai-privacy.png" alt="Privacy First">
-          <h3>Privacy & Security</h3>
-          <p>On-device processing ensuring health data remains private and secure.</p>
+        <div class="dg-feature glass scroll-hidden" style="transition-delay: 0.1s;">
+          <span class="dg-eyebrow">Documents</span>
+          <h3>Your medical papers, summarized</h3>
+          <p>Upload a blood test, a prescription or a scan report, and the AI turns it into a short summary you can
+            reuse.</p>
+          <ul>
+            <li>PDFs, photos and text documents</li>
+            <li>Rename and delete them anytime</li>
+            <li>Summaries feed into your next check-ups</li>
+          </ul>
+        </div>
+        <div class="dg-feature glass scroll-hidden">
+          <span class="dg-eyebrow">Health profile</span>
+          <h3>Context that makes answers better</h3>
+          <p>Fill in your profile once, and every check-up takes it into account.</p>
+          <ul>
+            <li>Age and gender</li>
+            <li>Allergies and past surgeries</li>
+            <li>Chronic illnesses and family history</li>
+            <li>A completion meter shows what is still missing</li>
+          </ul>
+        </div>
+        <div class="dg-feature glass scroll-hidden" style="transition-delay: 0.1s;">
+          <span class="dg-eyebrow">History</span>
+          <h3>Every check-up, kept</h3>
+          <p>Go back to previous check-ups and their conversations whenever you need them, for example before a
+            doctor's appointment.</p>
+          <ul>
+            <li>Browse and reopen past check-ups</li>
+            <li>Reread the full conversation of each one</li>
+            <li>A daily usage allowance, visible in the settings</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="scroll-container" id="aboutus">
-      <div class="glass centered-glass-card">
-        <h2 class="section-title text-mb-md">Purpose</h2>
-        <p class="text-lg text-muted text-mb-sm">
-          Diagnosly aims to revolutionize healthcare through artificial intelligence, making quality healthcare insights
-          accessible to everyone, everywhere.
-        </p>
+    <!-- Privacy and data flow -->
+    <section class="dg-section" id="privacy">
+      <h2 class="section-title scroll-hidden">Where your data goes</h2>
+      <p class="dg-section-lead scroll-hidden">Your health data lives on your phone. Only the question you ask
+        travels, and it goes through Criaphore's own server, never straight from the app to the AI provider.</p>
+
+      <div class="dg-flow scroll-hidden">
+        <div class="dg-flow-node dg-flow-phone glass">
+          <span class="dg-flow-where">On your phone</span>
+          <h3>Diagnosly app</h3>
+          <ul>
+            <li>Profile, check-ups, chats and documents</li>
+            <li>Stored in an encrypted database</li>
+            <li>Encryption key kept in the Android Keystore</li>
+          </ul>
+        </div>
+        <div class="dg-flow-arrow"><span>→</span><small>anonymous question</small></div>
+        <div class="dg-flow-node glass">
+          <span class="dg-flow-where">Criaphore server</span>
+          <h3>Secure gateway</h3>
+          <ul>
+            <li>Only accepts the genuine app (Firebase App Check)</li>
+            <li>Applies the daily usage allowance</li>
+            <li>Holds the AI keys: none are inside the app</li>
+          </ul>
+        </div>
+        <div class="dg-flow-arrow"><span>→</span><small>request</small></div>
+        <div class="dg-flow-node glass">
+          <span class="dg-flow-where">AI provider</span>
+          <h3>OpenAI</h3>
+          <ul>
+            <li>The Diagnosly assistant reads the check-up and its context</li>
+            <li>GPT-4.1 mini writes the document summaries</li>
+            <li>The answer comes back the same way</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dg-privacy glass scroll-hidden" style="margin-top: 2.5rem;">
+        <img src="../imgs/diagnosly/ai-privacy.png" alt="Privacy" loading="lazy">
+        <div>
+          <h3>Private by design</h3>
+          <ul>
+            <li><strong>No account</strong> needed to use the app</li>
+            <li><strong>Encrypted</strong> storage on your phone</li>
+            <li><strong>Anonymous</strong> questions to the AI</li>
+            <li><strong>Crash reports</strong> only, with no personal information</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech -->
+    <section class="dg-section" id="tech">
+      <h2 class="section-title scroll-hidden">Under the hood</h2>
+      <p class="dg-section-lead scroll-hidden">An AI assistant from OpenAI does the thinking, a small backend on Google
+        Cloud keeps it safe and affordable, and the app keeps everything personal on the phone.</p>
+
+      <ol class="dg-pipeline">
+        <li class="dg-pipe-step glass scroll-hidden">
+          <div>
+            <h3>The app builds the question</h3>
+            <p>The check-up answers, the health profile, the summaries of the documents you picked, and a request to
+              answer in your language.</p>
+          </div>
+          <span class="dg-where phone">Phone</span>
+        </li>
+        <li class="dg-pipe-step glass scroll-hidden">
+          <div>
+            <h3>The backend checks it</h3>
+            <p>Firebase App Check proves the request comes from the real app, and Firestore counts the device's daily
+              allowance.</p>
+          </div>
+          <span class="dg-where gcp">Google Cloud</span>
+        </li>
+        <li class="dg-pipe-step glass scroll-hidden">
+          <div>
+            <h3>The assistant works on it</h3>
+            <p>The request joins the check-up's own conversation thread, and the Diagnosly assistant runs on it.</p>
+          </div>
+          <span class="dg-where ai">OpenAI</span>
+        </li>
+        <li class="dg-pipe-step glass scroll-hidden">
+          <div>
+            <h3>The app waits for the answer</h3>
+            <p>It checks the run's progress every few seconds, then fetches the assistant's reply.</p>
+          </div>
+          <span class="dg-where phone">Phone</span>
+        </li>
+        <li class="dg-pipe-step glass scroll-hidden">
+          <div>
+            <h3>Saved, ready to continue</h3>
+            <p>The answer is stored in the encrypted database with the thread's ID, so the chat can pick up where it
+              left off.</p>
+          </div>
+          <span class="dg-where phone">Phone</span>
+        </li>
+      </ol>
+
+      <div class="dg-tech-cards">
+        <div class="dg-tech-card glass scroll-hidden">
+          <span class="dg-eyebrow">The assistant</span>
+          <h3>An AI agent with a memory</h3>
+          <p>Diagnosly is built on the <strong>OpenAI Assistants API</strong>: one assistant with its own
+            instructions, set up once on OpenAI's side and called by its ID.</p>
+          <p>Each check-up gets its own thread, which keeps the whole conversation. Follow-up questions build on
+            everything said before, without the app resending the history.</p>
+        </div>
+        <div class="dg-tech-card glass scroll-hidden" style="transition-delay: 0.1s;">
+          <span class="dg-eyebrow">Documents as context</span>
+          <h3>Retrieval, the simple way</h3>
+          <p>Each document is read once: images are sent inline, PDFs are uploaded as files, and <strong>GPT-4.1 mini</strong>
+            writes a short summary that is stored on the phone.</p>
+          <p>When you start a check-up, you choose which documents matter, and only their summaries are added to the
+            question. The AI gets the right context without a search index or the full files every time.</p>
+        </div>
+        <div class="dg-tech-card glass scroll-hidden" style="transition-delay: 0.2s;">
+          <span class="dg-eyebrow">Google Cloud backend</span>
+          <h3>A gateway, not a data store</h3>
+          <p>A <strong>Firebase Cloud Function</strong> (2nd gen, on <strong>Cloud Run</strong> in Europe) relays
+            every AI call. The OpenAI key lives in <strong>Secret Manager</strong>, never in the app.</p>
+          <p><strong>App Check</strong> with Play Integrity blocks fake clients, and <strong>Firestore</strong> keeps
+            a daily budget per device: 50 units, 1 per message and 3 per document.</p>
+        </div>
+      </div>
+
+      <div class="dg-stack scroll-hidden">
+        <span>Kotlin Multiplatform</span><span>Compose Multiplatform</span><span>Decompose</span><span>Koin</span>
+        <span>Ktor</span><span>Room + SQLCipher</span><span>DataStore</span><span>OpenAI Assistants API</span>
+        <span>GPT-4.1 mini</span><span>Firebase Cloud Functions</span><span>Cloud Run</span>
+        <span>Secret Manager</span><span>Firestore</span><span>Firebase App Check</span><span>Crashlytics</span>
+      </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="dg-section">
+      <div class="dg-disclaimer glass scroll-hidden">
+        <strong>Not a doctor.</strong> Diagnosly gives general health information to help you understand your
+        symptoms and prepare for a consultation. It does not replace professional medical advice, diagnosis or
+        treatment, and it is not meant for emergencies: in an urgent situation, call your local emergency number.
       </div>
     </section>
   </main>
@@ -102,7 +333,6 @@
 
   <script src="../scripts/copyright.js"></script>
   <script src="../scripts/scroll-animations.js"></script>
-  <script src="../scripts/waiting-list.js"></script>
 </body>
 
 </html>
