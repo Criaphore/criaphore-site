@@ -67,6 +67,29 @@
     margin: 0;
 }
 
+.orb-ph-badge {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.orb-ph-badge a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.orb-ph-badge a:hover {
+    transform: translateY(-3px);
+}
+
+.orb-ph-badge .ph-badge {
+    height: 52px;
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+    vertical-align: middle;
+}
+
 .orb-fine-print {
     margin-top: 1rem;
     font-size: 0.9rem;
