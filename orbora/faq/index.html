@@ -5,28 +5,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frequently Asked Questions | Orbora</title>
-    <meta name="description" content="Frequently Asked Questions (FAQ) for Orbora. Learn how to manage subscriptions, restore purchases, handle account data, understand credits, and get support.">
+    <meta name="description" content="Orbora FAQ: subscriptions, credits, Wellness Journey, offline listening, account deletion, privacy, and support.">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="canonical" href="https://criaphore.com/orbora/faq/" />
     <meta name="theme-color" content="#0a0a0a">
 
     <link rel="icon" type="image/png" href="../../imgs/orbora/fav/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="../../imgs/orbora/fav/favicon.svg" />
     <link rel="shortcut icon" href="../../imgs/orbora/fav/favicon.ico" />
+    <link rel="apple-touch-icon" href="../../imgs/orbora/fav/apple-touch-icon.png" />
+    <link rel="manifest" href="../../imgs/orbora/fav/site.webmanifest" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <style>.scroll-hidden{opacity:1!important;transform:none!important}</style>
+    </noscript>
     <link rel="stylesheet" href="../../css/style.css">
 
     <!-- Open Graph -->
+    <meta property="og:site_name" content="Criaphore" />
     <meta property="og:title" content="FAQ | Orbora" />
-    <meta property="og:description" content="Frequently Asked Questions for Orbora - Subscriptions, Account, Talks, Credits & Support." />
-    <meta property="og:image" content="https://criaphore.com/imgs/orbora/banner.png" />
+    <meta property="og:description" content="Answers about Orbora subscriptions, credits, Wellness Journey, privacy, and support." />
+    <meta property="og:image" content="https://criaphore.com/imgs/orbora/og-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://criaphore.com/orbora/faq/" />
     <meta property="og:type" content="website" />
 
-    <!-- FAQ Structured Data (Schema.org) -->
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FAQ | Orbora" />
+    <meta name="twitter:description" content="Answers about Orbora subscriptions, credits, Wellness Journey, privacy, and support." />
+    <meta name="twitter:image" content="https://criaphore.com/imgs/orbora/og-card.png" />
+
+    <!-- FAQ Structured Data (Schema.org, synced with visible FAQ) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -37,63 +52,63 @@
           "name": "How do I unsubscribe or cancel my subscription?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Subscriptions are managed directly by Apple (iOS) or Google (Android). On iOS: Open device Settings > tap your Apple ID profile > Subscriptions > select Orbora > Cancel Subscription. On Android: Open Google Play Store > tap your profile icon > Payments & subscriptions > Subscriptions > select Orbora > Cancel subscription. Note: Deleting the app does not automatically cancel your subscription."
+            "text": "Your subscription is billed by Apple or Google, so you can cancel it anytime in your store settings (or via Profile > Manage subscription in the app). Uninstalling the app or deleting your Orbora account does not cancel the subscription. Credits already in your balance stay yours."
           }
         },
         {
           "@type": "Question",
-          "name": "How do I request a refund from Google Play Store or Apple App Store?",
+          "name": "Is there a free way to try Orbora?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For iOS: Apple handles all billing. Visit reportaproblem.apple.com, sign in with your Apple ID, select Request a refund and choose your reason. For Android: Google provides self-service refunds. In the Google Play Store app go to Profile > Payments & subscriptions > Budget & order history > select Orbora > Request a refund, or request online via play.google.com/store/account/orderhistory."
+            "text": "Yes. The Wellness Journey (guided meditation, wisdom, and ASMR paths) and listening to your own sessions are free. Creating an account and confirming your email also gives you one free credit for a first 30-second personalized session."
           }
         },
         {
           "@type": "Question",
-          "name": "What is RevenueCat?",
+          "name": "How do credits work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "RevenueCat is our secure in-app purchase and subscription management infrastructure partner (revenuecat.com). It acts as a reliable bridge between the Apple App Store, Google Play Store, and our servers to validate receipts and grant Pro entitlements securely without ever accessing your financial details or credit cards."
+            "text": "Credits are only used to create new personalized sessions. Listening never uses credits. 1 credit equals 30 seconds of audio created (a 5-minute session uses 10 credits). If generation fails, credits are returned automatically. Unused credits never expire."
           }
         },
         {
           "@type": "Question",
-          "name": "How do I restore my purchases from RevenueCat?",
+          "name": "How do I restore my purchases?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "If you reinstall the app or switch phones, open Orbora, navigate to Account > Settings (or any Pro paywall screen), and tap 'Restore Purchases'. RevenueCat will securely verify your active store receipts with Apple or Google and restore your Pro access immediately."
+            "text": "Make sure your phone is signed in to the same Apple ID or Google account that made the purchase, sign in to your Orbora account, and go to Profile > Restore purchases. Your subscription and credit balance are also tied to your Orbora account."
           }
         },
         {
           "@type": "Question",
-          "name": "If I permanently delete my account or data, can I recover my talks?",
+          "name": "How do I request a refund?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. When you permanently delete your account, all associated conversations, talks, favorites, and profile data are immediately purged from our servers and Firebase database for privacy and compliance. They cannot be recovered by anyone."
+            "text": "All payments go through Apple or Google, and refunds are decided by them under their own policies. Request a refund via reportaproblem.apple.com on iPhone or Google Play order history on Android. Unused credits from a refunded purchase are removed from your balance."
           }
         },
         {
           "@type": "Question",
-          "name": "Can I switch phones and keep my talks on my new device?",
+          "name": "Can I use my subscription and sessions on both iPhone and Android?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Your talks, profile, and active entitlements are securely linked to your registered email address. Simply download Orbora on your new device and sign in with the exact same email address to restore access."
+            "text": "Yes. Your sessions, subscription, credits, and Wellness Journey progress belong to your Orbora account. Sign in with the same method on both phones and everything follows you."
           }
         },
         {
           "@type": "Question",
-          "name": "Can I get a refund for top-up credits?",
+          "name": "Are my sessions private?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Top-up credits are consumable digital goods designed for on-demand AI talk generation. In accordance with app store digital content policies, all credit purchases are final and non-refundable once acquired."
+            "text": "Yes. All traffic is encrypted via HTTPS, each account can only access its own sessions, we never sell your data, show ads, or track you across apps, and nobody on our team listens to your sessions."
           }
         },
         {
           "@type": "Question",
-          "name": "How do I contact the developer or customer support?",
+          "name": "How do I contact support?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can reach our engineering and support team directly via email at contact@criaphore.com. Please provide your registered account email, device model, and operating system version for fastest resolution."
+            "text": "Write to us anytime at contact@criaphore.com with your Orbora account email, phone model, and iOS or Android version."
           }
         }
       ]

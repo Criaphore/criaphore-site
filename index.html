@@ -4,38 +4,94 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criaphore | Intelligent Applications</title>
-    <meta name="description" content="Criaphore - Building next-gen agentic apps.">
+    <title>Criaphore | AI-Native Mobile Applications</title>
+    <meta name="description" content="Criaphore is an indie software studio by Brian Giannini building AI-native mobile applications, including Orbora for personalized calming audio.">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="canonical" href="https://criaphore.com/" />
     <meta name="theme-color" content="#0a0a0a">
 
-    <!-- Favicons -->
+    <!-- Favicons & Manifest -->
     <link rel="icon" type="image/png" href="imgs/criaphore/fav/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="imgs/criaphore/fav/favicon.svg" />
     <link rel="shortcut icon" href="imgs/criaphore/fav/favicon.ico" />
+    <link rel="apple-touch-icon" href="imgs/criaphore/fav/apple-touch-icon.png" />
+    <link rel="manifest" href="imgs/criaphore/fav/site.webmanifest" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <style>.scroll-hidden{opacity:1!important;transform:none!important}</style>
+    </noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Criaphore" />
-    <meta property="og:description" content="Building next-gen agentic apps." />
-    <meta property="og:image" content="https://criaphore.com/imgs/criaphore/criaphore.png" />
-    <meta property="og:url" content="https://criaphore.com" />
+    <meta property="og:site_name" content="Criaphore" />
+    <meta property="og:title" content="Criaphore | AI-Native Mobile Applications" />
+    <meta property="og:description" content="Indie software studio by Brian Giannini building AI-native mobile apps, including Orbora." />
+    <meta property="og:image" content="https://criaphore.com/imgs/criaphore/og-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://criaphore.com/" />
     <meta property="og:type" content="website" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Criaphore | AI-Native Mobile Applications" />
+    <meta name="twitter:description" content="Indie software studio by Brian Giannini building AI-native mobile apps, including Orbora." />
+    <meta name="twitter:image" content="https://criaphore.com/imgs/criaphore/og-card.png" />
+
+    <!-- Structured Data (GEO & SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://criaphore.com/#website",
+          "url": "https://criaphore.com/",
+          "name": "Criaphore",
+          "publisher": { "@id": "https://criaphore.com/#organization" }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://criaphore.com/#organization",
+          "name": "Criaphore",
+          "url": "https://criaphore.com/",
+          "logo": "https://criaphore.com/imgs/criaphore/criaphore.png",
+          "email": "mailto:contact@criaphore.com",
+          "description": "Independent software studio creating AI-native mobile applications, including Orbora.",
+          "founder": {
+            "@type": "Person",
+            "@id": "https://briangiannini.com/#person",
+            "name": "Brian Giannini",
+            "url": "https://briangiannini.com/"
+          },
+          "sameAs": [
+            "https://github.com/Criaphore",
+            "https://briangiannini.com/"
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Scripts -->
+    <script src="scripts/copyright.js" defer></script>
+    <script src="scripts/scroll-animations.js" defer></script>
+    <script src="scripts/webmcp-tools.js" defer></script>
 </head>
 
 <body>
-    <div class="background-glow"></div>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <div class="background-glow" aria-hidden="true"></div>
 
-    <nav class="navbar glass">
+    <nav class="navbar glass" aria-label="Primary">
         <a href="/" class="brand">
-            <img src="imgs/criaphore/criaphore.png" alt="Criaphore Logo">
+            <img src="imgs/criaphore/criaphore.webp" alt="Criaphore Logo" width="40" height="40">
             <span>Criaphore</span>
         </a>
 
@@ -46,15 +102,15 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
                 <h1 class="hero-title">Criaphore</h1>
                 <p class="tagline">Building next-gen agentic apps.</p>
-                <img src="imgs/criaphore/criaphore.png" alt="Criaphore" class="scroll-hidden hero-logo-img">
+                <img src="imgs/criaphore/criaphore.webp" alt="Criaphore" width="220" height="220" fetchpriority="high" class="scroll-hidden hero-logo-img">
                 <a href="#projects" class="scroll-down-btn" aria-label="Scroll to Projects">
-                    <svg viewBox="0 0 24 24" width="24" height="24">
+                    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                         <path d="M12 5v14M19 12l-7 7-7-7" />
                     </svg>
                 </a>
@@ -66,12 +122,12 @@
             <h2 class="section-title scroll-hidden">Active Projects</h2>
 
             <a href="orbora/" class="project-card glass scroll-hidden">
-                <img src="imgs/orbora/project_orbora.webp" alt="Orbora Logo" class="project-logo">
+                <img src="imgs/orbora/project_orbora.webp" alt="Orbora Logo" width="120" height="120" loading="lazy" decoding="async" class="project-logo">
                 <div class="project-info">
-                    <h2>Orbora</h2>
+                    <h3>Orbora</h3>
                     <p>Generative audio wellness for calm, sleep, and focus</p>
                 </div>
-                <div class="link-arrow">
+                <div class="link-arrow" aria-hidden="true">
                     Explore Project <span>&rarr;</span>
                 </div>
             </a>
@@ -79,12 +135,12 @@
             <h2 id="archived" class="section-title scroll-hidden" style="margin-top: 4rem;">Archived Projects</h2>
 
             <a href="diagnosly/" class="project-card glass scroll-hidden">
-                <img src="imgs/diagnosly/logo.png" alt="Diagnosly Logo" class="project-logo">
+                <img src="imgs/diagnosly/logo.png" alt="Diagnosly Logo" width="120" height="120" loading="lazy" decoding="async" class="project-logo">
                 <div class="project-info">
-                    <h2>Diagnosly</h2>
+                    <h3>Diagnosly</h3>
                     <p>An AI health companion: a guided symptom check-up, AI chat, document summaries and a private health profile.</p>
                 </div>
-                <div class="link-arrow">
+                <div class="link-arrow" aria-hidden="true">
                     Explore Project <span>&rarr;</span>
                 </div>
             </a>
@@ -98,8 +154,8 @@
                 <p>
                     Interested in collaboration or have an inquiry?
                 </p>
-                <a href="mailto:contact@criaphore.com" target="_blank" rel="noopener noreferrer" class="contact-email-btn">
-                    <svg viewBox="0 0 24 24">
+                <a href="mailto:contact@criaphore.com" class="contact-email-btn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                         <polyline points="22,6 12,13 2,6" />
                     </svg>
@@ -110,12 +166,8 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="copyright-year">2024 - 2026</span> Criaphore. All rights reserved.</p>
+        <p>&copy; <span id="copyright-year">2024 - 2026</span> Criaphore. Founded by <a href="https://briangiannini.com/" target="_blank" rel="noopener noreferrer">Brian Giannini</a>.</p>
     </footer>
-
-    <!-- Scripts -->
-    <script src="scripts/copyright.js"></script>
-    <script src="scripts/scroll-animations.js"></script>
 </body>
 
 </html>

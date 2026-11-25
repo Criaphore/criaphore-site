@@ -49,6 +49,31 @@ a:hover {
     color: var(--text-main);
 }
 
+.skip-link {
+    position: fixed;
+    top: -100px;
+    left: 16px;
+    z-index: 2000;
+    background: var(--primary);
+    color: #0a0a0a;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 16px;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
 /* Background Gradients */
 .background-glow {
     position: fixed;
@@ -70,6 +95,24 @@ a:hover {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .background-glow,
+    h1.hero-title,
+    .tagline {
+        animation: none !important;
+    }
+
+    .scroll-hidden {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    * {
+        scroll-behavior: auto !important;
     }
 }
 
@@ -290,7 +333,8 @@ h1.hero-title {
     text-align: left;
 }
 
-.project-info h2 {
+.project-info h2,
+.project-info h3 {
     font-size: 2.4rem;
     margin-bottom: 0.5rem;
 }

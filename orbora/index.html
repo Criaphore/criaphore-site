@@ -5,31 +5,88 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Orbora | Calming audio made for you</title>
-  <meta name="description" content="Orbora creates calming audio made for how you feel right now: personal AI meditations, breathing, ASMR and wisdom talks, plus guided Wellness Journey paths. Listening is always free.">
+  <meta name="description" content="Orbora creates calming AI audio for how you feel right now: personal meditations, breathing, ASMR, wisdom talks, and free Wellness Journeys.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="canonical" href="https://criaphore.com/orbora/" />
   <meta name="theme-color" content="#111E1D">
 
   <link rel="icon" type="image/png" href="../imgs/orbora/fav/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="../imgs/orbora/fav/favicon.svg" />
   <link rel="shortcut icon" href="../imgs/orbora/fav/favicon.ico" />
   <link rel="apple-touch-icon" href="../imgs/orbora/fav/apple-touch-icon.png" />
+  <link rel="manifest" href="../imgs/orbora/fav/site.webmanifest" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>.scroll-hidden{opacity:1!important;transform:none!important}</style>
+  </noscript>
 
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/orbora.css?v=3">
 
   <!-- Open Graph -->
+  <meta property="og:site_name" content="Criaphore" />
   <meta property="og:title" content="Orbora | Calming audio made for you" />
   <meta property="og:description" content="Personal AI meditations, breathing, ASMR and wisdom talks, made for how you feel right now." />
-  <meta property="og:image" content="https://criaphore.com/imgs/orbora/og-image.png" />
+  <meta property="og:image" content="https://criaphore.com/imgs/orbora/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:url" content="https://criaphore.com/orbora/" />
   <meta property="og:type" content="website" />
+
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Orbora | Calming audio made for you" />
+  <meta name="twitter:description" content="Personal AI meditations, breathing, ASMR and wisdom talks, made for how you feel right now." />
+  <meta name="twitter:image" content="https://criaphore.com/imgs/orbora/og-card.png" />
   <meta name="apple-itunes-app" content="app-id=6803242166" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MobileApplication",
+        "name": "Orbora",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "HealthApplication",
+        "description": "Personalized AI audio wellness app creating guided meditations, breathing exercises, ASMR relaxation, and wisdom talks tailored to how you feel right now.",
+        "url": "https://criaphore.com/orbora/",
+        "image": "https://criaphore.com/imgs/orbora/og-card.png",
+        "installUrl": [
+          "https://apps.apple.com/app/orbora/id6803242166",
+          "https://play.google.com/store/apps/details?id=com.criaphore.talkscompanion"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://criaphore.com/#organization",
+          "name": "Criaphore",
+          "url": "https://criaphore.com/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Criaphore", "item": "https://criaphore.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Orbora", "item": "https://criaphore.com/orbora/" }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script src="../scripts/copyright.js?v=2" defer></script>
+  <script src="../scripts/scroll-animations.js" defer></script>
+  <script src="../scripts/webmcp-tools.js" defer></script>
 </head>
 
 <body>
@@ -40,7 +97,7 @@
       <svg class="brand-back-arrow" viewBox="0 0 24 24">
         <path d="M19 12H5M12 19l-7-7 7-7" />
       </svg>
-      <img src="../imgs/criaphore/criaphore.png" alt="Criaphore Logo">
+      <img src="../imgs/criaphore/criaphore.webp" alt="Criaphore Logo" width="40" height="40">
       <span>Criaphore</span>
     </a>
 
@@ -66,12 +123,12 @@
         <p class="tagline">Calming audio made for you, for how you feel right now.</p>
 
         <div class="orb-badges">
-          <a href="https://apps.apple.com/app/orbora/id6803242166" target="_blank" rel="noopener">
-            <img src="../imgs/common/applestore.svg" alt="Download on the App Store" class="store-badge">
+          <a href="https://apps.apple.com/app/orbora/id6803242166" target="_blank" rel="noopener noreferrer">
+            <img src="../imgs/common/applestore.svg" alt="Download on the App Store" width="160" height="54" class="store-badge">
           </a>
           <a href="https://play.google.com/store/apps/details?id=com.criaphore.talkscompanion&amp;referrer=utm_source%3Dcriaphore.com%26utm_medium%3Dwebsite" target="_blank"
-            rel="noopener">
-            <img src="../imgs/common/playstore.svg" alt="Get it on Google Play" class="store-badge">
+            rel="noopener noreferrer">
+            <img src="../imgs/common/playstore.svg" alt="Get it on Google Play" width="180" height="54" class="store-badge">
           </a>
         </div>
         <div class="orb-ph-badge">
@@ -198,7 +255,7 @@
     <!-- Privacy -->
     <section class="orb-section" id="privacy">
       <div class="orb-privacy glass scroll-hidden">
-        <img src="../imgs/orbora/ai-privacy.png" alt="Privacy" loading="lazy">
+        <img src="../imgs/orbora/ai-privacy.webp" alt="Privacy" width="180" height="180" loading="lazy" decoding="async">
         <div>
           <h3>Calm, private, yours</h3>
           <ul>
@@ -306,21 +363,21 @@
 
     <!-- Closing call to action -->
     <section class="orb-cta scroll-hidden">
-      <img src="../imgs/orbora/icon.webp" alt="Orbora app icon" class="orb-app-icon">
+      <img src="../imgs/orbora/icon.webp" alt="Orbora app icon" width="96" height="96" loading="lazy" decoding="async" class="orb-app-icon">
       <h2>Find your calm in a minute or two</h2>
       <p>For iPhone and Android.</p>
       <div class="orb-badges">
-        <a href="https://apps.apple.com/app/orbora/id6803242166" target="_blank" rel="noopener">
-          <img src="../imgs/common/applestore.svg" alt="Download on the App Store" class="store-badge">
+        <a href="https://apps.apple.com/app/orbora/id6803242166" target="_blank" rel="noopener noreferrer">
+          <img src="../imgs/common/applestore.svg" alt="Download on the App Store" width="160" height="54" loading="lazy" class="store-badge">
         </a>
         <a href="https://play.google.com/store/apps/details?id=com.criaphore.talkscompanion&amp;referrer=utm_source%3Dcriaphore.com%26utm_medium%3Dwebsite" target="_blank"
-          rel="noopener">
-          <img src="../imgs/common/playstore.svg" alt="Get it on Google Play" class="store-badge">
+          rel="noopener noreferrer">
+          <img src="../imgs/common/playstore.svg" alt="Get it on Google Play" width="180" height="54" loading="lazy" class="store-badge">
         </a>
       </div>
       <div class="orb-ph-badge">
         <a href="https://www.producthunt.com/products/orbora?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-orbora" target="_blank" rel="noopener noreferrer">
-          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1276998&amp;theme=dark" alt="Orbora - Create personalized guided audio: meditation, breath, ASMR | Product Hunt" class="ph-badge" style="width: 250px; height: 54px;" width="250" height="54">
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1276998&amp;theme=dark" alt="Orbora - Create personalized guided audio: meditation, breath, ASMR | Product Hunt" class="ph-badge" style="width: 250px; height: 54px;" width="250" height="54" loading="lazy">
         </a>
       </div>
       <div class="orb-faq-prompt">
@@ -338,9 +395,6 @@
       <a href="mailto:contact@criaphore.com" class="footer-link">Contact</a>
     </div>
   </footer>
-
-  <script src="../scripts/copyright.js?v=2"></script>
-  <script src="../scripts/scroll-animations.js"></script>
 </body>
 
 </html>

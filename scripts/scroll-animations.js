@@ -16,15 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const hiddenElements = document.querySelectorAll('.scroll-hidden');
     hiddenElements.forEach((el) => observer.observe(el));
 
-    // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     if (navbar) {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        }, { passive: true });
     }
 });

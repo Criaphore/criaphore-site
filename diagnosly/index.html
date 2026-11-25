@@ -5,27 +5,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diagnosly | AI Health Companion</title>
-  <meta name="description" content="Diagnosly is an AI health companion: a guided symptom check-up, AI chat, document summaries and a private health profile, with your data encrypted on your phone.">
+  <meta name="description" content="Diagnosly is an archived AI health companion: guided symptom check-up, AI chat, document summaries, and on-device encrypted health profile.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="canonical" href="https://criaphore.com/diagnosly/" />
   <meta name="theme-color" content="#0a0a0a">
 
   <link rel="icon" type="image/png" href="../imgs/diagnosly/fav/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="../imgs/diagnosly/fav/favicon.svg" />
   <link rel="shortcut icon" href="../imgs/diagnosly/fav/favicon.ico" />
+  <link rel="apple-touch-icon" href="../imgs/diagnosly/fav/apple-touch-icon.png" />
+  <link rel="manifest" href="../imgs/diagnosly/fav/site.webmanifest" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>.scroll-hidden{opacity:1!important;transform:none!important}</style>
+  </noscript>
 
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/diagnosly.css">
 
   <!-- Open Graph -->
+  <meta property="og:site_name" content="Criaphore" />
   <meta property="og:title" content="Diagnosly | AI Health Companion" />
-  <meta property="og:description" content="A guided symptom check-up, AI chat, document summaries and a private health profile, with your data encrypted on your phone." />
+  <meta property="og:description" content="Guided symptom check-up, AI chat, document summaries, and encrypted on-device health profile (archived)." />
+  <meta property="og:image" content="https://criaphore.com/imgs/diagnosly/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:url" content="https://criaphore.com/diagnosly/" />
   <meta property="og:type" content="website" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Diagnosly | AI Health Companion" />
+  <meta name="twitter:description" content="Guided symptom check-up, AI chat, document summaries, and encrypted on-device health profile (archived)." />
+  <meta name="twitter:image" content="https://criaphore.com/imgs/diagnosly/og-card.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Diagnosly",
+        "operatingSystem": "Android, iOS",
+        "applicationCategory": "HealthApplication",
+        "description": "Archived AI health companion with guided symptom check-ups, AI chat, medical document summaries, and encrypted on-device storage (2024 - 2025).",
+        "url": "https://criaphore.com/diagnosly/",
+        "image": "https://criaphore.com/imgs/diagnosly/og-card.png",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://criaphore.com/#organization",
+          "name": "Criaphore",
+          "url": "https://criaphore.com/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Criaphore", "item": "https://criaphore.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Diagnosly", "item": "https://criaphore.com/diagnosly/" }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script src="../scripts/copyright.js" defer></script>
+  <script src="../scripts/scroll-animations.js" defer></script>
 </head>
 
 <body>
@@ -36,7 +86,7 @@
       <svg class="brand-back-arrow" viewBox="0 0 24 24">
         <path d="M19 12H5M12 19l-7-7 7-7" />
       </svg>
-      <img src="../imgs/criaphore/criaphore.png" alt="Criaphore Logo">
+      <img src="../imgs/criaphore/criaphore.webp" alt="Criaphore Logo" width="40" height="40">
       <span>Criaphore</span>
     </a>
 
@@ -53,7 +103,7 @@
     <section class="hero dg-hero" id="download">
       <div class="hero-content">
         <h1 class="hero-title">Diagnosly</h1>
-        <img src="../imgs/diagnosly/banner.png" alt="Diagnosly Banner" class="scroll-hidden banner-img">
+        <img src="../imgs/diagnosly/banner.webp" alt="Diagnosly Banner" width="1024" height="500" fetchpriority="high" class="scroll-hidden banner-img">
         <span class="dg-status">Archived project · 2024 – 2025</span>
         <p class="tagline">An AI health companion to make sense of your symptoms, your documents and your health
           history.</p>
@@ -212,7 +262,7 @@
       </div>
 
       <div class="dg-privacy glass scroll-hidden" style="margin-top: 2.5rem;">
-        <img src="../imgs/diagnosly/ai-privacy.png" alt="Privacy" loading="lazy">
+        <img src="../imgs/diagnosly/ai-privacy.webp" alt="Privacy" width="180" height="180" loading="lazy" decoding="async">
         <div>
           <h3>Private by design</h3>
           <ul>
@@ -324,9 +374,6 @@
       <a href="terms/" class="footer-link">Terms &amp; Conditions</a>
     </div>
   </footer>
-
-  <script src="../scripts/copyright.js"></script>
-  <script src="../scripts/scroll-animations.js"></script>
 </body>
 
 </html>

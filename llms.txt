@@ -1,20 +1,27 @@
 # Criaphore
 
-## Introduction
+> Criaphore is an independent software studio founded by Brian Giannini (https://briangiannini.com/) creating AI-native mobile applications, including Orbora for personalized calming audio on iOS and Android.
 
-Criaphore is SaaS company creating applications in service of people powered by AI
+## Active Applications
+- [Orbora](https://criaphore.com/orbora/): Generative AI audio wellness app creating personalized meditations, breathing exercises, ASMR relaxation, and wisdom talks, plus free 10-step Wellness Journey paths. Available on [Apple App Store](https://apps.apple.com/app/orbora/id6803242166) and [Google Play](https://play.google.com/store/apps/details?id=com.criaphore.talkscompanion).
+- [Orbora FAQ](https://criaphore.com/orbora/faq/): Answers about subscriptions, credits, Wellness Journey, offline listening, account deletion, privacy, and support.
 
-## Applications
+## Archived Applications
+- [Diagnosly](https://criaphore.com/diagnosly/): Archived AI health companion (2024 - 2025) with guided symptom check-ups, AI chat, document summaries, and on-device encrypted storage.
 
-[Orbora](https://criaphore.com/orbora/): Generative audio wellness app developed by Criaphore
-[Diagnosly](https://criaphore.com/diagnosly/): Archived AI health companion app by Criaphore, with a guided symptom check-up, AI chat, document summaries and a private health profile stored encrypted on the phone
+## AI Agent Interaction (WebMCP)
+This website supports WebMCP on `https://criaphore.com/` and `https://criaphore.com/orbora/`:
+- `listCriaphoreApps`: List active and archived Criaphore apps with links and store URLs.
+- `getOrboraInfo`: Get structured details on Orbora features, credits, privacy, tech stack, and store links.
 
-## Optional
-
+## Legal & Contact
 - [Website](https://criaphore.com/)
-- [Orbora FAQ](https://criaphore.com/orbora/faq/)
+- [Founder: Brian Giannini](https://briangiannini.com/)
 - [Support](mailto:contact@criaphore.com)
 - [Orbora Privacy Policy](https://criaphore.com/orbora/privacy/)
-- [Orbora Terms of Service](https://criaphore.com/orbora/terms/)
+- [Orbora Terms of Use](https://criaphore.com/orbora/terms/)
 - [Diagnosly Privacy Policy](https://criaphore.com/diagnosly/privacy/)
-- [Diagnosly Terms of Service](https://criaphore.com/diagnosly/terms/)
+- [Diagnosly Terms & Conditions](https://criaphore.com/diagnosly/terms/)
+
+## Optional
+- [Full Markdown Context](https://criaphore.com/llms-full.txt): Single-file overview of Criaphore, Orbora, and Diagnosly.

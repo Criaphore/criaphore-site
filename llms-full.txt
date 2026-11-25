@@ -1,0 +1,26 @@
+# Criaphore - Full Context for AI Assistants
+
+> Independent software studio founded by Brian Giannini (https://briangiannini.com/), based in Paris, France. Builds AI-native mobile applications. Contact: contact@criaphore.com.
+
+## Active Product: Orbora (https://criaphore.com/orbora/)
+Orbora is a cross-platform iOS & Android app that creates personalized calming spoken audio tailored to how the user feels right now: guided meditations, breathing exercises, ASMR-style relaxation, and wisdom talks.
+
+- **Download**:
+  - Apple App Store: https://apps.apple.com/app/orbora/id6803242166
+  - Google Play: https://play.google.com/store/apps/details?id=com.criaphore.talkscompanion
+- **How it works**: Users pick options from fixed menus (mood, energy, topic, duration from 30s to 10m, voice, tone) with no free-text prompt needed. The session is written and voiced in 1 to 2 minutes and downloaded for offline playback with the screen locked.
+- **Wellness Journey**: Three free 10-step guided paths (Meditation, Wisdom, ASMR), offline-ready, synced across devices.
+- **Pricing**: Listening and Wellness Journey are free. Generating new personalized sessions costs 1 credit per 30 seconds (1 free welcome credit on email verification). Orbora Pro adds 100 credits/month; one-time packs offer 20, 60, or 120 credits. Unused credits never expire.
+- **Privacy**: No ads, no cross-app tracking, no data selling, GDPR baseline worldwide, full in-app account deletion.
+- **Tech stack**: Kotlin Multiplatform, Compose Multiplatform, Ktor, Koin, Room, Media3 / AVPlayer, Gemini 3.8 Flash, Gemini 3.1 Flash TTS, Vertex AI, Cloud Run, Cloud Storage, Firestore, Firebase Auth, Firebase App Check, RevenueCat.
+- **FAQ**: https://criaphore.com/orbora/faq/
+- **Privacy Policy**: https://criaphore.com/orbora/privacy/
+- **Terms of Use**: https://criaphore.com/orbora/terms/
+
+## Archived Product: Diagnosly (https://criaphore.com/diagnosly/)
+Archived AI health companion (2024 - 2025) featuring a structured symptom check-up, follow-up AI chat, medical document summaries, and a local health profile encrypted on-device with Room + SQLCipher. Built with Kotlin Multiplatform, Compose Multiplatform, OpenAI Assistants API, GPT-4.1 mini, and Google Cloud / Firebase.
+
+## Links
+- Website: https://criaphore.com/
+- Founder: https://briangiannini.com/
+- Contact: contact@criaphore.com

@@ -4,29 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
   <title>404 - Page Not Found | Criaphore</title>
   <meta name="theme-color" content="#0a0a0a">
 
-  <link rel="icon" type="image/png" href="imgs/criaphore/fav/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="imgs/criaphore/fav/favicon.svg" />
-  <link rel="shortcut icon" href="imgs/criaphore/fav/favicon.ico" />
+  <link rel="icon" type="image/png" href="/imgs/criaphore/fav/favicon-96x96.png" sizes="96x96" />
+  <link rel="shortcut icon" href="/imgs/criaphore/fav/favicon.ico" />
+  <link rel="apple-touch-icon" href="/imgs/criaphore/fav/apple-touch-icon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  </noscript>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/scripts/copyright.js" defer></script>
 </head>
 
 <body>
-  <div class="background-glow"></div>
+  <div class="background-glow" aria-hidden="true"></div>
 
-  <nav class="navbar glass">
+  <nav class="navbar glass" aria-label="Primary">
     <a href="/" class="brand" title="Back to Home">
-      <svg class="brand-back-arrow" viewBox="0 0 24 24">
+      <svg class="brand-back-arrow" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M19 12H5M12 19l-7-7 7-7" />
       </svg>
-      <img src="imgs/criaphore/criaphore.png" alt="Criaphore Logo">
+      <img src="/imgs/criaphore/criaphore.webp" alt="Criaphore Logo" width="40" height="40">
       <span>Criaphore</span>
     </a>
     <div class="navbar-links">
@@ -35,7 +40,7 @@
   </nav>
 
   <main class="full-screen-center">
-    <div class="glass centered-glass-card scroll-hidden">
+    <div class="glass centered-glass-card">
       <h1 class="hero-title hero-404">404</h1>
       <h2 class="text-xl text-mb-md">Page Not Found</h2>
       <p class="text-muted text-mb-lg">
@@ -49,9 +54,6 @@
   <footer>
     <p>&copy; <span id="copyright-year">2024 - 2026</span> Criaphore. All rights reserved.</p>
   </footer>
-
-  <script src="scripts/copyright.js"></script>
-  <script src="scripts/scroll-animations.js"></script>
 </body>
 
 </html>

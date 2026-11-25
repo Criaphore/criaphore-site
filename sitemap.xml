@@ -2,50 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://criaphore.com/</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://criaphore.com/diagnosly/</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://criaphore.com/diagnosly/privacy/</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://criaphore.com/diagnosly/terms/</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <lastmod>2026-11-26</lastmod>
   </url>
   <url>
     <loc>https://criaphore.com/orbora/</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://criaphore.com/orbora/privacy/</loc>
-    <lastmod>2026-09-29</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://criaphore.com/orbora/terms/</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <lastmod>2026-11-26</lastmod>
   </url>
   <url>
     <loc>https://criaphore.com/orbora/faq/</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://criaphore.com/orbora/privacy/</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://criaphore.com/orbora/terms/</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://criaphore.com/diagnosly/</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://criaphore.com/diagnosly/privacy/</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://criaphore.com/diagnosly/terms/</loc>
+    <lastmod>2026-11-26</lastmod>
   </url>
 </urlset>
